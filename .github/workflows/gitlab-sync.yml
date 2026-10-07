@@ -5,7 +5,7 @@
 #
 # Voraussetzungen (Repository → Settings → Secrets & variables → Actions):
 #   Variable : GITLAB_REMOTE_URL   z.B. https://gitlab.unikat-cloud.de/group/repo.git
-#   Secret   : [REDACTED]]]   GitLab PAT mit Scopes: read_repository, write_repository
+#   Secret   : [REDACTED]]]]]]   GitLab PAT mit Scopes: read_repository, write_repository
 #
 # Loop-Schutz: SHA-Vergleich im Skript – Echo-Pushes werden erkannt und
 # übersprungen, es entsteht keine Schleife.
@@ -32,7 +32,7 @@ jobs:
       - name: Run git-sync
         run: bash scripts/git-sync.sh
         env:
-          TARGET_REMOTE_URL: ${{ vars.GITLAB_REMOTE_URL || secrets.GITLAB_REMOTE_URL }}
+          TARGET_REMOTE_URL: ${{ vars.GITLAB_REMOTE_URL || secrets.GITLAB_REMOTE_URL || 'https://gitlab.unikat-cloud.de/unikat-cloud.gitlab/grafana-dashboards.git' }}
           TARGET_TOKEN: ${{ secrets.GITLAB_SYNC_TOKEN }}
           TARGET_USER: oauth2
           BRANCH: main
