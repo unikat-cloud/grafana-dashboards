@@ -33,17 +33,3 @@ sync-to-github:
   script:
     - bash scripts/git-sync.sh
 
-# TEMPORÄR: einmaliger Force-Sync nach GitHub (Divergenz-Auflösung)
-force-sync-to-github:
-  stage: sync
-  image: alpine:latest
-  tags: [mcp]
-  rules:
-    - when: manual
-  before_script:
-    - apk add --no-cache git >/dev/null
-  variables:
-    GIT_DEPTH: 0
-    GIT_TERMINAL_PROMPT: "0"
-  script:
-    - git push --force "https://x-access-token:${GITHUB_SYNC_TOKEN}@github.com/unikat-cloud/grafana-dashboards.git" "HEAD:refs/heads/main"
