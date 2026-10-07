@@ -20,7 +20,7 @@
     "alloy",
     "journal",
     "docker",
-    "logs"
+    "protokolle"
   ],
   "time": {
     "from": "now-6h",
@@ -55,7 +55,7 @@
       {
         "name": "DS_LOKI",
         "label": "Loki",
-        "description": "Loki data source for log queries",
+        "description": "Loki-Datenquelle f\u00fcr Log-Abfragen",
         "type": "datasource",
         "query": "loki",
         "current": {
@@ -107,7 +107,7 @@
       {
         "name": "search",
         "type": "textbox",
-        "label": "Search in Logs",
+        "label": "Suche in Logs",
         "query": "",
         "current": {
           "text": "",
@@ -119,7 +119,7 @@
   "panels": [
     {
       "type": "row",
-      "title": "Log Volume",
+      "title": "Log-Volumen",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -131,7 +131,7 @@
     },
     {
       "type": "timeseries",
-      "title": "VM Log Volume (Journal)",
+      "title": "VM-Log-Volumen (Journal)",
       "datasource": {
         "type": "loki",
         "uid": "${DS_LOKI}"
@@ -157,7 +157,7 @@
     },
     {
       "type": "timeseries",
-      "title": "Docker Log Volume",
+      "title": "Docker-Log-Volumen",
       "datasource": {
         "type": "loki",
         "uid": "${DS_LOKI}"
@@ -183,7 +183,7 @@
     },
     {
       "type": "row",
-      "title": "Error Volume",
+      "title": "Fehler-Volumen",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -195,7 +195,7 @@
     },
     {
       "type": "timeseries",
-      "title": "VM Error Volume (Journal)",
+      "title": "VM-Fehler-Volumen (Journal)",
       "datasource": {
         "type": "loki",
         "uid": "${DS_LOKI}"
@@ -221,7 +221,7 @@
     },
     {
       "type": "timeseries",
-      "title": "Docker Error Volume",
+      "title": "Docker-Fehler-Volumen",
       "datasource": {
         "type": "loki",
         "uid": "${DS_LOKI}"
@@ -247,7 +247,7 @@
     },
     {
       "type": "row",
-      "title": "Live Logs",
+      "title": "Live-Logs",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -259,7 +259,7 @@
     },
     {
       "type": "logs",
-      "title": "VM Logs (Journal)",
+      "title": "VM-Logs (Journal)",
       "datasource": {
         "type": "loki",
         "uid": "${DS_LOKI}"
@@ -287,7 +287,7 @@
     },
     {
       "type": "logs",
-      "title": "Docker Logs",
+      "title": "Docker-Logs",
       "datasource": {
         "type": "loki",
         "uid": "${DS_LOKI}"
@@ -314,7 +314,7 @@
       "id": 9
     }
   ],
-  "description": "Alloy + Loki: log volume and live logs from system journal and Docker containers. Filter by host and container.",
+  "description": "Alloy + Loki: Log-Volumen und Live-Logs aus System-Journal und Docker-Containern. Filter nach Host und Container.",
   "editable": true,
   "graphTooltip": 1,
   "weekStart": null,

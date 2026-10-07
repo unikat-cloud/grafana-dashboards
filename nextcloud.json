@@ -47,7 +47,7 @@
       "version": ""
     }
   ],
-  "title": "Nextcloud Overview",
+  "title": "Nextcloud \u00dcbersicht",
   "uid": "nextcloud-overview",
   "tags": [
     "nextcloud",
@@ -67,7 +67,7 @@
   "panels": [
     {
       "type": "row",
-      "title": "Overview",
+      "title": "\u00dcbersicht",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -79,7 +79,7 @@
     },
     {
       "type": "stat",
-      "title": "Nextcloud Version",
+      "title": "Nextcloud-Version",
       "id": 1,
       "datasource": {
         "type": "prometheus",
@@ -130,7 +130,7 @@
     },
     {
       "type": "stat",
-      "title": "Active Users (5 min)",
+      "title": "Aktive Benutzer (5 min)",
       "id": 2,
       "datasource": {
         "type": "prometheus",
@@ -188,7 +188,7 @@
     },
     {
       "type": "stat",
-      "title": "Active Users (1h)",
+      "title": "Aktive Benutzer (1h)",
       "id": 3,
       "datasource": {
         "type": "prometheus",
@@ -246,7 +246,7 @@
     },
     {
       "type": "stat",
-      "title": "Active Users (24h)",
+      "title": "Aktive Benutzer (24h)",
       "id": 4,
       "datasource": {
         "type": "prometheus",
@@ -304,7 +304,7 @@
     },
     {
       "type": "stat",
-      "title": "Registered Users",
+      "title": "Registrierte Benutzer",
       "id": 5,
       "datasource": {
         "type": "prometheus",
@@ -354,7 +354,7 @@
     },
     {
       "type": "stat",
-      "title": "Total Files",
+      "title": "Dateien gesamt",
       "id": 6,
       "datasource": {
         "type": "prometheus",
@@ -404,7 +404,7 @@
     },
     {
       "type": "stat",
-      "title": "Maintenance",
+      "title": "Wartungsmodus",
       "id": 7,
       "datasource": {
         "type": "prometheus",
@@ -464,7 +464,7 @@
       "targets": [
         {
           "expr": "nextcloud_maintenance",
-          "legendFormat": "Maintenance",
+          "legendFormat": "Wartung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -474,7 +474,7 @@
     },
     {
       "type": "stat",
-      "title": "Log Level",
+      "title": "Log-Level",
       "id": 8,
       "datasource": {
         "type": "prometheus",
@@ -553,7 +553,7 @@
       "targets": [
         {
           "expr": "nextcloud_log_level",
-          "legendFormat": "Log Level",
+          "legendFormat": "Log-Level",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -563,7 +563,7 @@
     },
     {
       "type": "stat",
-      "title": "Running Jobs",
+      "title": "Laufende Jobs",
       "id": 9,
       "datasource": {
         "type": "prometheus",
@@ -621,7 +621,7 @@
     },
     {
       "type": "stat",
-      "title": "Comments",
+      "title": "Kommentare",
       "id": 10,
       "datasource": {
         "type": "prometheus",
@@ -671,7 +671,7 @@
     },
     {
       "type": "stat",
-      "title": "Exporter Runtime",
+      "title": "Exporter-Laufzeit",
       "id": 11,
       "datasource": {
         "type": "prometheus",
@@ -730,7 +730,7 @@
     },
     {
       "type": "stat",
-      "title": "Talk Active Calls",
+      "title": "Talk: Aktive Anrufe",
       "id": 12,
       "datasource": {
         "type": "prometheus",
@@ -778,7 +778,7 @@
       "targets": [
         {
           "expr": "nextcloud_talk_active_calls",
-          "legendFormat": "Calls",
+          "legendFormat": "Anrufe",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -788,7 +788,7 @@
     },
     {
       "type": "row",
-      "title": "User Activity",
+      "title": "Benutzeraktivit\u00e4t",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -800,7 +800,7 @@
     },
     {
       "type": "timeseries",
-      "title": "Active Users (history)",
+      "title": "Aktive Benutzer (Verlauf)",
       "id": 13,
       "datasource": {
         "type": "prometheus",
@@ -876,7 +876,7 @@
     },
     {
       "type": "timeseries",
-      "title": "Active Sessions (history)",
+      "title": "Aktive Sitzungen (Verlauf)",
       "id": 14,
       "datasource": {
         "type": "prometheus",
@@ -952,7 +952,7 @@
     },
     {
       "type": "row",
-      "title": "Files & Shares",
+      "title": "Dateien & Freigaben",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -964,7 +964,7 @@
     },
     {
       "type": "table",
-      "title": "Files by Type",
+      "title": "Dateien nach Typ",
       "id": 15,
       "datasource": {
         "type": "prometheus",
@@ -1069,7 +1069,7 @@
     },
     {
       "type": "barchart",
-      "title": "Top 15 File Types",
+      "title": "Top 15 Dateitypen",
       "id": 16,
       "datasource": {
         "type": "prometheus",
@@ -1126,7 +1126,7 @@
     },
     {
       "type": "stat",
-      "title": "Shares",
+      "title": "Freigaben",
       "id": 17,
       "datasource": {
         "type": "prometheus",
@@ -1177,7 +1177,7 @@
     },
     {
       "type": "stat",
-      "title": "Users by Backend",
+      "title": "Benutzer nach Backend",
       "id": 18,
       "datasource": {
         "type": "prometheus",
@@ -1240,7 +1240,7 @@
     },
     {
       "type": "stat",
-      "title": "Total Apps",
+      "title": "Apps gesamt",
       "id": 19,
       "datasource": {
         "type": "prometheus",
@@ -1290,7 +1290,7 @@
     },
     {
       "type": "stat",
-      "title": "Enabled / Disabled",
+      "title": "Aktiviert / Deaktiviert",
       "id": 20,
       "datasource": {
         "type": "prometheus",
@@ -1341,7 +1341,7 @@
     },
     {
       "type": "table",
-      "title": "Installed Apps (Details)",
+      "title": "Installierte Apps (Details)",
       "id": 21,
       "datasource": {
         "type": "prometheus",
@@ -1457,7 +1457,7 @@
       ]
     }
   ],
-  "description": "Nextcloud overview: users, files, shares and apps. Requires nextcloud-exporter.",
+  "description": "Nextcloud-\u00dcbersicht: Benutzer, Dateien, Freigaben und Apps. Erfordert nextcloud-exporter.",
   "templating": {
     "list": [
       {

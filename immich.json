@@ -43,10 +43,10 @@
   ],
   "title": "Immich",
   "uid": "immich",
-  "description": "Immich 2.7.5 - API & Microservices Monitoring",
+  "description": "Immich 2.7.5 \u2013 API- & Microservices-Monitoring",
   "tags": [
     "immich",
-    "selfhosted"
+    "selbstgehostet"
   ],
   "schemaVersion": 36,
   "version": 1,
@@ -62,7 +62,7 @@
     {
       "id": 25,
       "type": "row",
-      "title": "Overview",
+      "title": "\u00dcbersicht",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -74,7 +74,7 @@
     {
       "id": 26,
       "type": "stat",
-      "title": "Users",
+      "title": "Benutzer",
       "gridPos": {
         "h": 3,
         "w": 6,
@@ -84,7 +84,7 @@
       "targets": [
         {
           "expr": "immich_users_total",
-          "legendFormat": "Users",
+          "legendFormat": "Benutzer",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -124,7 +124,7 @@
     {
       "id": 27,
       "type": "stat",
-      "title": "Thumbnail Failures",
+      "title": "Thumbnail-Fehler",
       "gridPos": {
         "h": 3,
         "w": 6,
@@ -134,7 +134,7 @@
       "targets": [
         {
           "expr": "rate(immich_jobs_asset_generate_thumbnails_failed_total[5m])",
-          "legendFormat": "Failures",
+          "legendFormat": "Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -178,7 +178,7 @@
     {
       "id": 28,
       "type": "stat",
-      "title": "Total HTTP Requests",
+      "title": "HTTP-Anfragen gesamt",
       "gridPos": {
         "h": 3,
         "w": 6,
@@ -188,7 +188,7 @@
       "targets": [
         {
           "expr": "sum(http_server_request_count_total)",
-          "legendFormat": "Requests",
+          "legendFormat": "Anfragen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -228,7 +228,7 @@
     {
       "id": 29,
       "type": "stat",
-      "title": "Success Rate (HTTP)",
+      "title": "Erfolgsrate (HTTP)",
       "gridPos": {
         "h": 3,
         "w": 6,
@@ -238,7 +238,7 @@
       "targets": [
         {
           "expr": "sum(rate(http_server_response_success_count_total[5m])) / sum(rate(http_server_response_count_total[5m])) * 100",
-          "legendFormat": "Success %",
+          "legendFormat": "Erfolg %",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -301,7 +301,7 @@
     {
       "id": 2,
       "type": "stat",
-      "title": "System CPU",
+      "title": "System-CPU",
       "gridPos": {
         "h": 4,
         "w": 4,
@@ -362,7 +362,7 @@
     {
       "id": 3,
       "type": "stat",
-      "title": "System Memory",
+      "title": "Systemspeicher",
       "gridPos": {
         "h": 4,
         "w": 4,
@@ -372,7 +372,7 @@
       "targets": [
         {
           "expr": "system_memory_utilization{system_memory_state=\"used\"} * 100",
-          "legendFormat": "Memory",
+          "legendFormat": "Speicher",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -423,7 +423,7 @@
     {
       "id": 4,
       "type": "stat",
-      "title": "System Memory (bytes)",
+      "title": "Systemspeicher (Bytes)",
       "gridPos": {
         "h": 4,
         "w": 4,
@@ -433,7 +433,7 @@
       "targets": [
         {
           "expr": "system_memory_usage{system_memory_state=\"used\"}",
-          "legendFormat": "Used",
+          "legendFormat": "Belegt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -441,7 +441,7 @@
         },
         {
           "expr": "system_memory_usage{system_memory_state=\"free\"}",
-          "legendFormat": "Free",
+          "legendFormat": "Frei",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -482,7 +482,7 @@
     {
       "id": 5,
       "type": "timeseries",
-      "title": "System CPU Utilization",
+      "title": "System-CPU-Auslastung",
       "gridPos": {
         "h": 6,
         "w": 12,
@@ -529,7 +529,7 @@
     {
       "id": 6,
       "type": "timeseries",
-      "title": "System Network I/O",
+      "title": "System-Netzwerk-I/O",
       "gridPos": {
         "h": 6,
         "w": 12,
@@ -574,7 +574,7 @@
     {
       "id": 7,
       "type": "row",
-      "title": "Process Resources",
+      "title": "Prozessressourcen",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -586,7 +586,7 @@
     {
       "id": 8,
       "type": "stat",
-      "title": "API Memory",
+      "title": "API-Speicher",
       "gridPos": {
         "h": 3,
         "w": 3,
@@ -706,7 +706,7 @@
     {
       "id": 10,
       "type": "stat",
-      "title": "Microservices Memory",
+      "title": "Microservices-Speicher",
       "gridPos": {
         "h": 3,
         "w": 3,
@@ -838,7 +838,7 @@
     {
       "id": 13,
       "type": "timeseries",
-      "title": "HTTP Requests per Second",
+      "title": "HTTP-Anfragen pro Sekunde",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -883,7 +883,7 @@
     {
       "id": 14,
       "type": "timeseries",
-      "title": "HTTP Response Status Codes",
+      "title": "HTTP-Statuscodes",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -928,7 +928,7 @@
     {
       "id": 15,
       "type": "timeseries",
-      "title": "HTTP Request Duration (P50/P95/P99)",
+      "title": "HTTP-Anfragedauer (P50/P95/P99)",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -989,7 +989,7 @@
     {
       "id": 16,
       "type": "timeseries",
-      "title": "HTTP Request Duration by Path",
+      "title": "HTTP-Anfragedauer nach Pfad",
       "gridPos": {
         "h": 6,
         "w": 12,
@@ -1034,7 +1034,7 @@
     {
       "id": 17,
       "type": "timeseries",
-      "title": "HTTP Request Rate by Path",
+      "title": "HTTP-Anfragenrate nach Pfad",
       "gridPos": {
         "h": 6,
         "w": 12,
@@ -1079,7 +1079,7 @@
     {
       "id": 18,
       "type": "row",
-      "title": "Job Queues (Microservices)",
+      "title": "Job-Warteschlangen (Microservices)",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -1091,7 +1091,7 @@
     {
       "id": 19,
       "type": "bargauge",
-      "title": "Active Queues",
+      "title": "Aktive Warteschlangen",
       "gridPos": {
         "h": 6,
         "w": 12,
@@ -1101,7 +1101,7 @@
       "targets": [
         {
           "expr": "immich_queues_thumbnail_generation_active",
-          "legendFormat": "Thumbnail Generation",
+          "legendFormat": "Thumbnail-Erstellung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1109,7 +1109,7 @@
         },
         {
           "expr": "immich_queues_metadata_extraction_active",
-          "legendFormat": "Metadata Extraction",
+          "legendFormat": "Metadaten-Extraktion",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1117,7 +1117,7 @@
         },
         {
           "expr": "immich_queues_face_detection_active",
-          "legendFormat": "Face Detection",
+          "legendFormat": "Gesichtsdetektion",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1125,7 +1125,7 @@
         },
         {
           "expr": "immich_queues_smart_search_active",
-          "legendFormat": "Smart Search",
+          "legendFormat": "Intelligente Suche",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1141,7 +1141,7 @@
         },
         {
           "expr": "immich_queues_duplicate_detection_active",
-          "legendFormat": "Duplicate Detection",
+          "legendFormat": "Duplikaterkennung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1149,7 +1149,7 @@
         },
         {
           "expr": "immich_queues_facial_recognition_active",
-          "legendFormat": "Facial Recognition",
+          "legendFormat": "Gesichtserkennung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1157,7 +1157,7 @@
         },
         {
           "expr": "immich_queues_library_active",
-          "legendFormat": "Library Scan",
+          "legendFormat": "Bibliotheks-Scan",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1165,7 +1165,7 @@
         },
         {
           "expr": "immich_queues_background_task_active",
-          "legendFormat": "Background Task",
+          "legendFormat": "Hintergrundaufgabe",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1173,7 +1173,7 @@
         },
         {
           "expr": "immich_queues_storage_template_migration_active",
-          "legendFormat": "Storage Template Migration",
+          "legendFormat": "Speicher-Template-Migration",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1181,7 +1181,7 @@
         },
         {
           "expr": "immich_queues_backup_database_active",
-          "legendFormat": "Database Backup",
+          "legendFormat": "Datenbank-Backup",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1229,7 +1229,7 @@
     {
       "id": 20,
       "type": "timeseries",
-      "title": "Job Success Rate",
+      "title": "Job-Erfolgsrate",
       "gridPos": {
         "h": 6,
         "w": 12,
@@ -1247,7 +1247,7 @@
         },
         {
           "expr": "rate(immich_jobs_asset_detect_faces_success_total[5m])",
-          "legendFormat": "Face Detection",
+          "legendFormat": "Gesichtsdetektion",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1263,7 +1263,7 @@
         },
         {
           "expr": "rate(immich_jobs_smart_search_success_total[5m])",
-          "legendFormat": "Smart Search",
+          "legendFormat": "Intelligente Suche",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1271,7 +1271,7 @@
         },
         {
           "expr": "rate(immich_jobs_asset_detect_duplicates_success_total[5m])",
-          "legendFormat": "Duplicate Detection",
+          "legendFormat": "Duplikaterkennung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1306,7 +1306,7 @@
     {
       "id": 21,
       "type": "row",
-      "title": "Repository Operations Duration (P95)",
+      "title": "Dauer der Repository-Operationen (P95)",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -1318,7 +1318,7 @@
     {
       "id": 22,
       "type": "timeseries",
-      "title": "Asset Operations",
+      "title": "Asset-Operationen",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1336,7 +1336,7 @@
         },
         {
           "expr": "histogram_quantile(0.95, sum(rate(immich_asset_repository_create_duration_bucket[5m])) by (le))",
-          "legendFormat": "Create Asset",
+          "legendFormat": "Asset anlegen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1344,7 +1344,7 @@
         },
         {
           "expr": "histogram_quantile(0.95, sum(rate(immich_asset_repository_get_file_samples_duration_bucket[5m])) by (le))",
-          "legendFormat": "Get File Samples",
+          "legendFormat": "Datei-Samples abrufen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1379,7 +1379,7 @@
     {
       "id": 23,
       "type": "timeseries",
-      "title": "Database Operations",
+      "title": "Datenbank-Operationen",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1389,7 +1389,7 @@
       "targets": [
         {
           "expr": "histogram_quantile(0.95, sum(rate(immich_database_repository_get_schema_drift_duration_bucket[5m])) by (le))",
-          "legendFormat": "Schema Drift",
+          "legendFormat": "Schema-Abweichung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1397,7 +1397,7 @@
         },
         {
           "expr": "histogram_quantile(0.95, sum(rate(immich_database_repository_get_postgres_version_duration_bucket[5m])) by (le))",
-          "legendFormat": "Postgres Version",
+          "legendFormat": "PostgreSQL-Version",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1413,7 +1413,7 @@
         },
         {
           "expr": "histogram_quantile(0.95, sum(rate(immich_database_repository_run_migrations_duration_bucket[5m])) by (le))",
-          "legendFormat": "Run Migrations",
+          "legendFormat": "Migrationen ausf\u00fchren",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1448,7 +1448,7 @@
     {
       "id": 24,
       "type": "timeseries",
-      "title": "ML / Media Operations (Microservices)",
+      "title": "ML-/Medien-Operationen (Microservices)",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1458,7 +1458,7 @@
       "targets": [
         {
           "expr": "histogram_quantile(0.95, sum(rate(immich_machine_learning_repository_encode_image_duration_bucket[5m])) by (le))",
-          "legendFormat": "ML Encode Image",
+          "legendFormat": "ML-Bildkodierung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1466,7 +1466,7 @@
         },
         {
           "expr": "histogram_quantile(0.95, sum(rate(immich_machine_learning_repository_detect_faces_duration_bucket[5m])) by (le))",
-          "legendFormat": "ML Detect Faces",
+          "legendFormat": "ML-Gesichtserkennung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1474,7 +1474,7 @@
         },
         {
           "expr": "histogram_quantile(0.95, sum(rate(immich_media_repository_generate_thumbnail_duration_bucket[5m])) by (le))",
-          "legendFormat": "Generate Thumbnail",
+          "legendFormat": "Thumbnail erzeugen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
