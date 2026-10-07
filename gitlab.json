@@ -17,7 +17,7 @@
   "timezone": "browser",
   "tags": [
     "gitlab",
-    "monitoring",
+    "\u00fcberwachung",
     "devops"
   ],
   "time": {
@@ -51,7 +51,7 @@
   "panels": [
     {
       "type": "row",
-      "title": "Overview",
+      "title": "\u00dcbersicht",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -61,7 +61,7 @@
       "id": 1
     },
     {
-      "title": "GitLab Version",
+      "title": "GitLab-Version",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -189,7 +189,7 @@
       "id": 3
     },
     {
-      "title": "Boot Time",
+      "title": "Boot-Zeit",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -205,7 +205,7 @@
         {
           "refId": "A",
           "expr": "gitlab_rails_boot_time_seconds",
-          "legendFormat": "Boot Time",
+          "legendFormat": "Boot-Zeit",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -248,7 +248,7 @@
       "id": 4
     },
     {
-      "title": "Authenticated Users",
+      "title": "Authentifizierte Benutzer",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -264,7 +264,7 @@
         {
           "refId": "A",
           "expr": "gitlab_auth_user_authenticated_total",
-          "legendFormat": "Total",
+          "legendFormat": "Gesamt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -307,7 +307,7 @@
       "id": 5
     },
     {
-      "title": "2FA Authenticated",
+      "title": "2FA authentifiziert",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -323,7 +323,7 @@
         {
           "refId": "A",
           "expr": "gitlab_auth_user_two_factor_authenticated_total",
-          "legendFormat": "Total",
+          "legendFormat": "Gesamt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -366,7 +366,7 @@
       "id": 6
     },
     {
-      "title": "Session Overrides",
+      "title": "Sitzungs-Overrides",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -382,7 +382,7 @@
         {
           "refId": "A",
           "expr": "gitlab_auth_user_session_override_total",
-          "legendFormat": "Total",
+          "legendFormat": "Gesamt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -425,7 +425,7 @@
       "id": 7
     },
     {
-      "title": "User Session Logins",
+      "title": "Session-Anmeldungen",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -441,7 +441,7 @@
         {
           "refId": "A",
           "expr": "user_session_logins_total",
-          "legendFormat": "Total",
+          "legendFormat": "Gesamt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -495,7 +495,7 @@
       "id": 9
     },
     {
-      "title": "CPU Total",
+      "title": "CPU gesamt",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -511,7 +511,7 @@
         {
           "refId": "A",
           "expr": "ruby_process_cpu_seconds_total",
-          "legendFormat": "Total",
+          "legendFormat": "Gesamt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -554,7 +554,7 @@
       "id": 10
     },
     {
-      "title": "Resident Memory",
+      "title": "Residenter Speicher",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -613,7 +613,7 @@
       "id": 11
     },
     {
-      "title": "Unique Memory",
+      "title": "Unique-Speicher",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -672,7 +672,7 @@
       "id": 12
     },
     {
-      "title": "Proportional Memory",
+      "title": "Proportionaler Speicher",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -731,7 +731,7 @@
       "id": 13
     },
     {
-      "title": "File Descriptors",
+      "title": "Dateideskriptoren",
       "type": "gauge",
       "gridPos": {
         "h": 4,
@@ -798,7 +798,7 @@
       "id": 14
     },
     {
-      "title": "YJIT Enabled",
+      "title": "YJIT aktiviert",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -833,11 +833,11 @@
               "options": {
                 "0": {
                   "color": "red",
-                  "text": "Disabled"
+                  "text": "Deaktiviert"
                 },
                 "1": {
                   "color": "green",
-                  "text": "Enabled"
+                  "text": "Aktiviert"
                 }
               }
             }
@@ -871,7 +871,7 @@
       "id": 15
     },
     {
-      "title": "CPU Usage",
+      "title": "CPU-Auslastung",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -958,7 +958,7 @@
       "id": 16
     },
     {
-      "title": "Memory Usage",
+      "title": "Speicherauslastung",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1081,7 +1081,7 @@
       "id": 17
     },
     {
-      "title": "Memory Breakdown",
+      "title": "Speicheraufschl\u00fcsselung",
       "type": "bargauge",
       "gridPos": {
         "h": 8,
@@ -1185,7 +1185,7 @@
       "id": 19
     },
     {
-      "title": "Active Connections",
+      "title": "Aktive Verbindungen",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -1201,7 +1201,7 @@
         {
           "refId": "A",
           "expr": "puma_active_connections",
-          "legendFormat": "Active",
+          "legendFormat": "Aktiv",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1244,7 +1244,7 @@
       "id": 20
     },
     {
-      "title": "Queued Connections",
+      "title": "Wartende Verbindungen",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -1260,7 +1260,7 @@
         {
           "refId": "A",
           "expr": "puma_queued_connections",
-          "legendFormat": "Queued",
+          "legendFormat": "Wartend",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1303,7 +1303,7 @@
       "id": 21
     },
     {
-      "title": "Pool Capacity",
+      "title": "Pool-Kapazit\u00e4t",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -1319,7 +1319,7 @@
         {
           "refId": "A",
           "expr": "puma_pool_capacity",
-          "legendFormat": "Capacity",
+          "legendFormat": "Kapazit\u00e4t",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1362,7 +1362,7 @@
       "id": 22
     },
     {
-      "title": "Running",
+      "title": "Laufend",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -1378,7 +1378,7 @@
         {
           "refId": "A",
           "expr": "puma_running",
-          "legendFormat": "Running",
+          "legendFormat": "Laufend",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1421,7 +1421,7 @@
       "id": 23
     },
     {
-      "title": "Workers",
+      "title": "Worker",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -1437,7 +1437,7 @@
         {
           "refId": "A",
           "expr": "puma_workers",
-          "legendFormat": "Workers",
+          "legendFormat": "Worker",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1480,7 +1480,7 @@
       "id": 24
     },
     {
-      "title": "Running Workers",
+      "title": "Laufende Worker",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -1496,7 +1496,7 @@
         {
           "refId": "A",
           "expr": "puma_running_workers",
-          "legendFormat": "Running Workers",
+          "legendFormat": "Laufende Worker",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1539,7 +1539,7 @@
       "id": 25
     },
     {
-      "title": "Stale Workers",
+      "title": "Veraltete Worker",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -1555,7 +1555,7 @@
         {
           "refId": "A",
           "expr": "puma_stale_workers",
-          "legendFormat": "Stale Workers",
+          "legendFormat": "Veraltete Worker",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1598,7 +1598,7 @@
       "id": 26
     },
     {
-      "title": "Max Threads",
+      "title": "Max. Threads",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -1614,7 +1614,7 @@
         {
           "refId": "A",
           "expr": "puma_max_threads",
-          "legendFormat": "Max Threads",
+          "legendFormat": "Max. Threads",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1657,7 +1657,7 @@
       "id": 27
     },
     {
-      "title": "Idle Threads",
+      "title": "Inaktive Threads",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -1673,7 +1673,7 @@
         {
           "refId": "A",
           "expr": "puma_idle_threads",
-          "legendFormat": "Idle Threads",
+          "legendFormat": "Inaktive Threads",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1716,7 +1716,7 @@
       "id": 28
     },
     {
-      "title": "Puma Connections",
+      "title": "Puma-Verbindungen",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1732,7 +1732,7 @@
         {
           "refId": "A",
           "expr": "puma_active_connections",
-          "legendFormat": "Active",
+          "legendFormat": "Aktiv",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1741,7 +1741,7 @@
         {
           "refId": "B",
           "expr": "puma_queued_connections",
-          "legendFormat": "Queued",
+          "legendFormat": "Wartend",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1750,7 +1750,7 @@
         {
           "refId": "C",
           "expr": "puma_pool_capacity",
-          "legendFormat": "Pool Capacity",
+          "legendFormat": "Pool-Kapazit\u00e4t",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1821,7 +1821,7 @@
       "id": 29
     },
     {
-      "title": "Puma Threads",
+      "title": "Puma-Threads",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1846,7 +1846,7 @@
         {
           "refId": "B",
           "expr": "puma_idle_threads",
-          "legendFormat": "Idle",
+          "legendFormat": "Inaktiv",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1855,7 +1855,7 @@
         {
           "refId": "C",
           "expr": "puma_running",
-          "legendFormat": "Running",
+          "legendFormat": "Laufend",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1926,7 +1926,7 @@
       "id": 30
     },
     {
-      "title": "Puma Workers",
+      "title": "Puma-Worker",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1942,7 +1942,7 @@
         {
           "refId": "A",
           "expr": "puma_workers",
-          "legendFormat": "Workers",
+          "legendFormat": "Worker",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1951,7 +1951,7 @@
         {
           "refId": "B",
           "expr": "puma_running_workers",
-          "legendFormat": "Running",
+          "legendFormat": "Laufend",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1960,7 +1960,7 @@
         {
           "refId": "C",
           "expr": "puma_stale_workers",
-          "legendFormat": "Stale",
+          "legendFormat": "Veraltet",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2042,7 +2042,7 @@
       "id": 32
     },
     {
-      "title": "Active Connections",
+      "title": "Aktive Verbindungen",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2058,7 +2058,7 @@
         {
           "refId": "A",
           "expr": "action_cable_active_connections",
-          "legendFormat": "Active",
+          "legendFormat": "Aktiv",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2101,7 +2101,7 @@
       "id": 33
     },
     {
-      "title": "Pool Current Size",
+      "title": "Pool-Gr\u00f6\u00dfe aktuell",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2117,7 +2117,7 @@
         {
           "refId": "A",
           "expr": "action_cable_pool_current_size",
-          "legendFormat": "Current Size",
+          "legendFormat": "Aktuelle Gr\u00f6\u00dfe",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2160,7 +2160,7 @@
       "id": 34
     },
     {
-      "title": "Pool Max Size",
+      "title": "Pool-Gr\u00f6\u00dfe maximal",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2176,7 +2176,7 @@
         {
           "refId": "A",
           "expr": "action_cable_pool_max_size",
-          "legendFormat": "Max Size",
+          "legendFormat": "Max. Gr\u00f6\u00dfe",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2219,7 +2219,7 @@
       "id": 35
     },
     {
-      "title": "Pool Pending Tasks",
+      "title": "Ausstehende Pool-Tasks",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2235,7 +2235,7 @@
         {
           "refId": "A",
           "expr": "action_cable_pool_pending_tasks",
-          "legendFormat": "Pending Tasks",
+          "legendFormat": "Ausstehende Tasks",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2278,7 +2278,7 @@
       "id": 36
     },
     {
-      "title": "Action Cable Pool Sizes",
+      "title": "Action-Cable-Pool-Gr\u00f6\u00dfen",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2294,7 +2294,7 @@
         {
           "refId": "A",
           "expr": "action_cable_pool_current_size",
-          "legendFormat": "Current",
+          "legendFormat": "Aktuell",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2303,7 +2303,7 @@
         {
           "refId": "B",
           "expr": "action_cable_pool_largest_size",
-          "legendFormat": "Largest",
+          "legendFormat": "Gr\u00f6\u00dfte",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2403,7 +2403,7 @@
       "id": 38
     },
     {
-      "title": "DB Connections",
+      "title": "DB-Verbindungen",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2419,7 +2419,7 @@
         {
           "refId": "A",
           "expr": "gitlab_database_connection_pool_connections",
-          "legendFormat": "Connections",
+          "legendFormat": "Verbindungen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2462,7 +2462,7 @@
       "id": 39
     },
     {
-      "title": "DB Busy",
+      "title": "DB belegt",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2478,7 +2478,7 @@
         {
           "refId": "A",
           "expr": "gitlab_database_connection_pool_busy",
-          "legendFormat": "Busy",
+          "legendFormat": "Belegt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2521,7 +2521,7 @@
       "id": 40
     },
     {
-      "title": "DB Idle",
+      "title": "DB inaktiv",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2537,7 +2537,7 @@
         {
           "refId": "A",
           "expr": "gitlab_database_connection_pool_idle",
-          "legendFormat": "Idle",
+          "legendFormat": "Inaktiv",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2580,7 +2580,7 @@
       "id": 41
     },
     {
-      "title": "DB Dead",
+      "title": "DB tot",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2596,7 +2596,7 @@
         {
           "refId": "A",
           "expr": "gitlab_database_connection_pool_dead",
-          "legendFormat": "Dead",
+          "legendFormat": "Tot",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2639,7 +2639,7 @@
       "id": 42
     },
     {
-      "title": "DB Waiting",
+      "title": "DB wartend",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2655,7 +2655,7 @@
         {
           "refId": "A",
           "expr": "gitlab_database_connection_pool_waiting",
-          "legendFormat": "Waiting",
+          "legendFormat": "Wartend",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2698,7 +2698,7 @@
       "id": 43
     },
     {
-      "title": "DB Pool Size",
+      "title": "DB-Pool-Gr\u00f6\u00dfe",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2714,7 +2714,7 @@
         {
           "refId": "A",
           "expr": "gitlab_database_connection_pool_size",
-          "legendFormat": "Pool Size",
+          "legendFormat": "Pool-Gr\u00f6\u00dfe",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2757,7 +2757,7 @@
       "id": 44
     },
     {
-      "title": "Load Balancing Hosts",
+      "title": "Load-Balancing-Hosts",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2773,7 +2773,7 @@
         {
           "refId": "A",
           "expr": "db_load_balancing_hosts",
-          "legendFormat": "Load Balancing Hosts",
+          "legendFormat": "Load-Balancing-Hosts",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2816,7 +2816,7 @@
       "id": 45
     },
     {
-      "title": "DB Pool Connections",
+      "title": "DB-Pool-Verbindungen",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2832,7 +2832,7 @@
         {
           "refId": "A",
           "expr": "gitlab_database_connection_pool_connections",
-          "legendFormat": "Connections",
+          "legendFormat": "Verbindungen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2841,7 +2841,7 @@
         {
           "refId": "B",
           "expr": "gitlab_database_connection_pool_busy",
-          "legendFormat": "Busy",
+          "legendFormat": "Belegt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2850,7 +2850,7 @@
         {
           "refId": "C",
           "expr": "gitlab_database_connection_pool_idle",
-          "legendFormat": "Idle",
+          "legendFormat": "Inaktiv",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2859,7 +2859,7 @@
         {
           "refId": "D",
           "expr": "gitlab_database_connection_pool_dead",
-          "legendFormat": "Dead",
+          "legendFormat": "Tot",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2868,7 +2868,7 @@
         {
           "refId": "E",
           "expr": "gitlab_database_connection_pool_waiting",
-          "legendFormat": "Waiting",
+          "legendFormat": "Wartend",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2877,7 +2877,7 @@
         {
           "refId": "F",
           "expr": "gitlab_database_connection_pool_size",
-          "legendFormat": "Size",
+          "legendFormat": "Gr\u00f6\u00dfe",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2948,7 +2948,7 @@
       "id": 46
     },
     {
-      "title": "SQL Duration",
+      "title": "SQL-Dauer",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2964,7 +2964,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_sql_duration_seconds_sum[$__rate_interval])",
-          "legendFormat": "SQL Duration",
+          "legendFormat": "SQL-Dauer",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -3035,7 +3035,7 @@
       "id": 47
     },
     {
-      "title": "Primary SQL Duration",
+      "title": "Primary-SQL-Dauer",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -3051,7 +3051,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_sql_primary_duration_seconds_sum[$__rate_interval])",
-          "legendFormat": "Primary SQL",
+          "legendFormat": "Primary-SQL",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -3122,7 +3122,7 @@
       "id": 48
     },
     {
-      "title": "DB Transaction Duration",
+      "title": "DB-Transaktionsdauer",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -3209,7 +3209,7 @@
       "id": 49
     },
     {
-      "title": "Transaction DB Count",
+      "title": "DB-Z\u00e4hler (Transaktion)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -3225,7 +3225,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_transaction_db_count_total[$__rate_interval])",
-          "legendFormat": "DB Count",
+          "legendFormat": "DB-Anzahl",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -3296,7 +3296,7 @@
       "id": 50
     },
     {
-      "title": "Transaction DB Write Count",
+      "title": "DB-Schreibz\u00e4hler (Transaktion)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -3312,7 +3312,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_transaction_db_write_count_total[$__rate_interval])",
-          "legendFormat": "DB Write",
+          "legendFormat": "DB-Schreibzugriffe",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -3383,7 +3383,7 @@
       "id": 51
     },
     {
-      "title": "Transaction DB Cached",
+      "title": "DB-Cache-Treffer (Transaktion)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -3399,7 +3399,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_transaction_db_cached_count_total[$__rate_interval])",
-          "legendFormat": "Cached",
+          "legendFormat": "Gecacht",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -3470,7 +3470,7 @@
       "id": 52
     },
     {
-      "title": "Transaction DB Primary",
+      "title": "DB-Primary (Transaktion)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -3557,7 +3557,7 @@
       "id": 53
     },
     {
-      "title": "Transaction DB Primary Write",
+      "title": "DB-Primary-Schreibzugriffe (Transaktion)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -3573,7 +3573,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_transaction_db_primary_write_count_total[$__rate_interval])",
-          "legendFormat": "Primary Write",
+          "legendFormat": "Primary-Schreibzugriffe",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -3655,7 +3655,7 @@
       "id": 55
     },
     {
-      "title": "Redis Requests",
+      "title": "Redis-Anfragen",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -3671,7 +3671,7 @@
         {
           "refId": "A",
           "expr": "gitlab_redis_client_requests_total",
-          "legendFormat": "Requests",
+          "legendFormat": "Anfragen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -3714,7 +3714,7 @@
       "id": 56
     },
     {
-      "title": "Redis Pipelined",
+      "title": "Redis gepipelined",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -3730,7 +3730,7 @@
         {
           "refId": "A",
           "expr": "gitlab_redis_client_requests_pipelined_commands",
-          "legendFormat": "Pipelined",
+          "legendFormat": "Gepipelined",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -3773,7 +3773,7 @@
       "id": 57
     },
     {
-      "title": "Redis Request Rate",
+      "title": "Redis-Anfragenrate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -3789,7 +3789,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_redis_client_requests_total[$__rate_interval])",
-          "legendFormat": "Requests",
+          "legendFormat": "Anfragen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -3860,7 +3860,7 @@
       "id": 58
     },
     {
-      "title": "Redis Duration",
+      "title": "Redis-Dauer",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -3876,7 +3876,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_redis_client_requests_duration_seconds_sum[$__rate_interval])",
-          "legendFormat": "Duration",
+          "legendFormat": "Dauer",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -3947,7 +3947,7 @@
       "id": 59
     },
     {
-      "title": "Redis Hit/Miss",
+      "title": "Redis-Hits/Misses",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -4034,7 +4034,7 @@
       "id": 60
     },
     {
-      "title": "New Redis Connections",
+      "title": "Neue Redis-Verbindungen",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -4050,7 +4050,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_transaction_new_redis_connections_total[$__rate_interval])",
-          "legendFormat": "New Connections",
+          "legendFormat": "Neue Verbindungen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -4132,7 +4132,7 @@
       "id": 62
     },
     {
-      "title": "Cache Operations Rate",
+      "title": "Cache-Operationen-Rate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -4219,7 +4219,7 @@
       "id": 63
     },
     {
-      "title": "Cache Misses Rate",
+      "title": "Cache-Miss-Rate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -4306,7 +4306,7 @@
       "id": 64
     },
     {
-      "title": "Cache Operation Duration",
+      "title": "Cache-Operationsdauer",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -4393,7 +4393,7 @@
       "id": 65
     },
     {
-      "title": "Cache Read Multi Key Count",
+      "title": "Multi-Key-Cache-Reads",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -4409,7 +4409,7 @@
         {
           "refId": "A",
           "expr": "gitlab_cache_read_multikey_count",
-          "legendFormat": "Multi Key",
+          "legendFormat": "Multi-Key",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -4480,7 +4480,7 @@
       "id": 66
     },
     {
-      "title": "Cached Object Operations",
+      "title": "Cache-Objekt-Operationen",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -4578,7 +4578,7 @@
       "id": 68
     },
     {
-      "title": "Total HTTP Requests",
+      "title": "HTTP-Anfragen gesamt",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -4594,7 +4594,7 @@
         {
           "refId": "A",
           "expr": "http_requests_total",
-          "legendFormat": "Total",
+          "legendFormat": "Gesamt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -4637,7 +4637,7 @@
       "id": 69
     },
     {
-      "title": "Rack Requests",
+      "title": "Rack-Anfragen",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -4696,7 +4696,7 @@
       "id": 70
     },
     {
-      "title": "Health Requests",
+      "title": "Health-Anfragen",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -4755,7 +4755,7 @@
       "id": 71
     },
     {
-      "title": "HTTP Request Rate",
+      "title": "HTTP-Anfragenrate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -4842,7 +4842,7 @@
       "id": 72
     },
     {
-      "title": "HTTP Request Duration",
+      "title": "HTTP-Anfragedauer",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -4858,7 +4858,7 @@
         {
           "refId": "A",
           "expr": "rate(http_request_duration_seconds_sum[$__rate_interval]) / rate(http_request_duration_seconds_count[$__rate_interval])",
-          "legendFormat": "Avg Duration",
+          "legendFormat": "\u00d8 Dauer",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -4929,7 +4929,7 @@
       "id": 73
     },
     {
-      "title": "HTTP Health Request Rate",
+      "title": "HTTP-Health-Anfragenrate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -5016,7 +5016,7 @@
       "id": 74
     },
     {
-      "title": "Rack Request Rate",
+      "title": "Rack-Anfragenrate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -5114,7 +5114,7 @@
       "id": 76
     },
     {
-      "title": "Rate Limiter Utilization",
+      "title": "Rate-Limiter-Auslastung",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -5201,7 +5201,7 @@
       "id": 77
     },
     {
-      "title": "Auth Rate",
+      "title": "Auth-Rate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -5288,7 +5288,7 @@
       "id": 78
     },
     {
-      "title": "CSRF Invalid",
+      "title": "CSRF ung\u00fcltig",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -5375,7 +5375,7 @@
       "id": 79
     },
     {
-      "title": "Session Override Rate",
+      "title": "Session-Override-Rate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -5462,7 +5462,7 @@
       "id": 80
     },
     {
-      "title": "Sessionless Auth Rate",
+      "title": "Sessionlose Auth-Rate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -5478,7 +5478,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_auth_user_sessionless_authentication_total[$__rate_interval])",
-          "legendFormat": "Sessionless",
+          "legendFormat": "Sessionlos",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -5549,7 +5549,7 @@
       "id": 81
     },
     {
-      "title": "Snowplow Events",
+      "title": "Snowplow-Ereignisse",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -5565,7 +5565,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_snowplow_events_total[$__rate_interval])",
-          "legendFormat": "Events",
+          "legendFormat": "Ereignisse",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -5574,7 +5574,7 @@
         {
           "refId": "B",
           "expr": "rate(gitlab_snowplow_successful_events_total[$__rate_interval])",
-          "legendFormat": "Successful",
+          "legendFormat": "Erfolgreich",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -5656,7 +5656,7 @@
       "id": 83
     },
     {
-      "title": "Total Allocated Objects",
+      "title": "Allokierte Objekte gesamt",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -5672,7 +5672,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_total_allocated_objects",
-          "legendFormat": "Allocated",
+          "legendFormat": "Allokiert",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -5715,7 +5715,7 @@
       "id": 84
     },
     {
-      "title": "Total Freed Objects",
+      "title": "Freigegebene Objekte gesamt",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -5731,7 +5731,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_total_freed_objects",
-          "legendFormat": "Freed",
+          "legendFormat": "Freigegeben",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -5774,7 +5774,7 @@
       "id": 85
     },
     {
-      "title": "Total Moved Objects",
+      "title": "Verschobene Objekte gesamt",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -5790,7 +5790,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_total_moved_objects",
-          "legendFormat": "Moved",
+          "legendFormat": "Verschoben",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -5833,7 +5833,7 @@
       "id": 86
     },
     {
-      "title": "Live Slots",
+      "title": "Belegte Slots",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -5849,7 +5849,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_heap_live_slots",
-          "legendFormat": "Live",
+          "legendFormat": "Belegt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -5892,7 +5892,7 @@
       "id": 87
     },
     {
-      "title": "Free Slots",
+      "title": "Freie Slots",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -5908,7 +5908,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_heap_free_slots",
-          "legendFormat": "Free",
+          "legendFormat": "Frei",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -5951,7 +5951,7 @@
       "id": 88
     },
     {
-      "title": "GC Count",
+      "title": "GC-Anzahl",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -5967,7 +5967,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_count",
-          "legendFormat": "GC Count",
+          "legendFormat": "GC-Anzahl",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6010,7 +6010,7 @@
       "id": 89
     },
     {
-      "title": "Compact Count",
+      "title": "Kompaktierungen",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -6026,7 +6026,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_compact_count",
-          "legendFormat": "Compact",
+          "legendFormat": "Kompaktierungen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6069,7 +6069,7 @@
       "id": 90
     },
     {
-      "title": "Sampler Duration",
+      "title": "Sampler-Dauer",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -6128,7 +6128,7 @@
       "id": 91
     },
     {
-      "title": "Read Barrier Faults",
+      "title": "Read-Barrier-Fehler",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -6144,7 +6144,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_read_barrier_faults",
-          "legendFormat": "Faults",
+          "legendFormat": "Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6187,7 +6187,7 @@
       "id": 92
     },
     {
-      "title": "GC Duration",
+      "title": "GC-Dauer",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -6203,7 +6203,7 @@
         {
           "refId": "A",
           "expr": "rate(ruby_gc_duration_seconds_sum[$__rate_interval])",
-          "legendFormat": "GC Duration",
+          "legendFormat": "GC-Dauer",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6274,7 +6274,7 @@
       "id": 93
     },
     {
-      "title": "GC Count",
+      "title": "GC-Anzahl",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -6290,7 +6290,7 @@
         {
           "refId": "A",
           "expr": "rate(ruby_gc_stat_count[$__rate_interval])",
-          "legendFormat": "GC Count",
+          "legendFormat": "GC-Anzahl",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6361,7 +6361,7 @@
       "id": 94
     },
     {
-      "title": "Major GC",
+      "title": "Major-GC",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -6377,7 +6377,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_major_gc_count",
-          "legendFormat": "Major GC",
+          "legendFormat": "Major-GC",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6448,7 +6448,7 @@
       "id": 95
     },
     {
-      "title": "Minor GC",
+      "title": "Minor-GC",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -6464,7 +6464,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_minor_gc_count",
-          "legendFormat": "Minor GC",
+          "legendFormat": "Minor-GC",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6535,7 +6535,7 @@
       "id": 96
     },
     {
-      "title": "Heap Live Slots",
+      "title": "Heap: belegte Slots",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -6551,7 +6551,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_heap_live_slots",
-          "legendFormat": "Live",
+          "legendFormat": "Belegt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6622,7 +6622,7 @@
       "id": 97
     },
     {
-      "title": "Heap Free Slots",
+      "title": "Heap: freie Slots",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -6638,7 +6638,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_heap_free_slots",
-          "legendFormat": "Free",
+          "legendFormat": "Frei",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6709,7 +6709,7 @@
       "id": 98
     },
     {
-      "title": "Heap Fragmentation",
+      "title": "Heap-Fragmentierung",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -6725,7 +6725,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_ext_heap_fragmentation",
-          "legendFormat": "Fragmentation",
+          "legendFormat": "Fragmentierung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6796,7 +6796,7 @@
       "id": 99
     },
     {
-      "title": "Malloc Increase",
+      "title": "Malloc-Zuwachs",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -6812,7 +6812,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_malloc_increase_bytes",
-          "legendFormat": "Malloc Increase",
+          "legendFormat": "Malloc-Zuwachs",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6883,7 +6883,7 @@
       "id": 100
     },
     {
-      "title": "Heap Allocated Pages",
+      "title": "Heap: allokierte Seiten",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -6899,7 +6899,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_heap_allocated_pages",
-          "legendFormat": "Pages",
+          "legendFormat": "Seiten",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -6970,7 +6970,7 @@
       "id": 101
     },
     {
-      "title": "GC Compact Count",
+      "title": "GC-Kompaktierungen",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -6986,7 +6986,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_compact_count",
-          "legendFormat": "Compact",
+          "legendFormat": "Kompaktierungen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -7057,7 +7057,7 @@
       "id": 102
     },
     {
-      "title": "GC Time",
+      "title": "GC-Zeit",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -7073,7 +7073,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_time",
-          "legendFormat": "GC Time",
+          "legendFormat": "GC-Zeit",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -7144,7 +7144,7 @@
       "id": 103
     },
     {
-      "title": "GC Marking Time",
+      "title": "GC-Marking-Zeit",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -7160,7 +7160,7 @@
         {
           "refId": "A",
           "expr": "ruby_gc_stat_marking_time",
-          "legendFormat": "Marking Time",
+          "legendFormat": "Marking-Zeit",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -7242,7 +7242,7 @@
       "id": 105
     },
     {
-      "title": "Repository Hash Cache Hit",
+      "title": "Repository-Hash-Cache-Treffer",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -7329,7 +7329,7 @@
       "id": 106
     },
     {
-      "title": "Repository Hash Cache Size",
+      "title": "Repository-Hash-Cache-Gr\u00f6\u00dfe",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -7416,7 +7416,7 @@
       "id": 107
     },
     {
-      "title": "Merge Request Match",
+      "title": "Merge-Request-Match",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -7503,7 +7503,7 @@
       "id": 108
     },
     {
-      "title": "Merge Request Stale Secondary",
+      "title": "Merge-Request: veralteter Secondary",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -7519,7 +7519,7 @@
         {
           "refId": "A",
           "expr": "gitlab_merge_request_match_stale_secondary",
-          "legendFormat": "Stale Secondary",
+          "legendFormat": "Veralteter Secondary",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -7590,7 +7590,7 @@
       "id": 109
     },
     {
-      "title": "Blob Size Distribution",
+      "title": "Blob-Gr\u00f6\u00dfenverteilung",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -7677,7 +7677,7 @@
       "id": 110
     },
     {
-      "title": "Blob Truncated",
+      "title": "Abgeschnittene Blobs",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -7693,7 +7693,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_blob_truncated_true[$__rate_interval])",
-          "legendFormat": "Truncated",
+          "legendFormat": "Abgeschnitten",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -7702,7 +7702,7 @@
         {
           "refId": "B",
           "expr": "rate(gitlab_blob_truncated_false[$__rate_interval])",
-          "legendFormat": "Not Truncated",
+          "legendFormat": "Nicht abgeschnitten",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -7784,7 +7784,7 @@
       "id": 112
     },
     {
-      "title": "Enqueued Jobs",
+      "title": "Eingereihte Jobs",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -7800,7 +7800,7 @@
         {
           "refId": "A",
           "expr": "sidekiq_enqueued_jobs_total",
-          "legendFormat": "Enqueued",
+          "legendFormat": "Eingereiht",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -7854,7 +7854,7 @@
       "id": 114
     },
     {
-      "title": "Rails Request Apdex",
+      "title": "Rails-Request-Apdex",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -7941,7 +7941,7 @@
       "id": 115
     },
     {
-      "title": "Rails Request Error Rate",
+      "title": "Rails-Request-Fehlerrate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -7957,7 +7957,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_sli_rails_request_error_total[$__rate_interval]) / rate(gitlab_sli_rails_request_total[$__rate_interval])",
-          "legendFormat": "Error Rate",
+          "legendFormat": "Fehlerrate",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -8028,7 +8028,7 @@
       "id": 116
     },
     {
-      "title": "Rails Request Rate",
+      "title": "Rails-Request-Rate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -8044,7 +8044,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_sli_rails_request_total[$__rate_interval])",
-          "legendFormat": "Requests",
+          "legendFormat": "Anfragen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -8115,7 +8115,7 @@
       "id": 117
     },
     {
-      "title": "GraphQL Query Apdex",
+      "title": "GraphQL-Abfrage-Apdex",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -8202,7 +8202,7 @@
       "id": 118
     },
     {
-      "title": "GraphQL Query Error Rate",
+      "title": "GraphQL-Abfrage-Fehlerrate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -8218,7 +8218,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_sli_graphql_query_error_total[$__rate_interval]) / rate(gitlab_sli_graphql_query_total[$__rate_interval])",
-          "legendFormat": "Error Rate",
+          "legendFormat": "Fehlerrate",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -8289,7 +8289,7 @@
       "id": 119
     },
     {
-      "title": "GraphQL Query Rate",
+      "title": "GraphQL-Abfrage-Rate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -8305,7 +8305,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_sli_graphql_query_total[$__rate_interval])",
-          "legendFormat": "Queries",
+          "legendFormat": "Abfragen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -8376,7 +8376,7 @@
       "id": 120
     },
     {
-      "title": "Global Search Apdex",
+      "title": "Globale Suche Apdex",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -8463,7 +8463,7 @@
       "id": 121
     },
     {
-      "title": "Global Search Error Rate",
+      "title": "Globale Suche Fehlerrate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -8479,7 +8479,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_sli_global_search_error_total[$__rate_interval]) / rate(gitlab_sli_global_search_total[$__rate_interval])",
-          "legendFormat": "Error Rate",
+          "legendFormat": "Fehlerrate",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -8550,7 +8550,7 @@
       "id": 122
     },
     {
-      "title": "GLQL Apdex",
+      "title": "GLQL-Apdex",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -8637,7 +8637,7 @@
       "id": 123
     },
     {
-      "title": "GLQL Error Rate",
+      "title": "GLQL-Fehlerrate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -8653,7 +8653,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_sli_glql_error_total[$__rate_interval]) / rate(gitlab_sli_glql_total[$__rate_interval])",
-          "legendFormat": "Error Rate",
+          "legendFormat": "Fehlerrate",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -8724,7 +8724,7 @@
       "id": 124
     },
     {
-      "title": "Path Traversal Check Apdex",
+      "title": "Path-Traversal-Pr\u00fcfung Apdex",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -8811,7 +8811,7 @@
       "id": 125
     },
     {
-      "title": "LFS Check Objects",
+      "title": "LFS-Pr\u00fcfobjekte",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -8827,7 +8827,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_sli_lfs_check_objects_total[$__rate_interval])",
-          "legendFormat": "Objects",
+          "legendFormat": "Objekte",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -8909,7 +8909,7 @@
       "id": 127
     },
     {
-      "title": "Transaction Duration",
+      "title": "Transaktionsdauer",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -8925,7 +8925,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_transaction_duration_seconds_sum[$__rate_interval])",
-          "legendFormat": "Duration",
+          "legendFormat": "Dauer",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -8996,7 +8996,7 @@
       "id": 128
     },
     {
-      "title": "Transaction View Duration",
+      "title": "Transaktionsdauer (View)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -9012,7 +9012,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_transaction_view_duration_total[$__rate_interval])",
-          "legendFormat": "View Duration",
+          "legendFormat": "View-Dauer",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -9083,7 +9083,7 @@
       "id": 129
     },
     {
-      "title": "Transaction Queue Duration",
+      "title": "Transaktionsdauer (Warteschlange)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -9099,7 +9099,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_transaction_rails_queue_duration_total[$__rate_interval])",
-          "legendFormat": "Queue Duration",
+          "legendFormat": "Queue-Dauer",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -9170,7 +9170,7 @@
       "id": 130
     },
     {
-      "title": "Transaction Cache Read Hits",
+      "title": "Transaktion: Cache-Read-Hits",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -9257,7 +9257,7 @@
       "id": 131
     },
     {
-      "title": "Transaction Cache Read Misses",
+      "title": "Transaktion: Cache-Read-Misses",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -9344,7 +9344,7 @@
       "id": 132
     },
     {
-      "title": "Transaction Exceptions",
+      "title": "Transaktions-Ausnahmen",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -9360,7 +9360,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_transaction_event_rails_exception_total[$__rate_interval])",
-          "legendFormat": "Exceptions",
+          "legendFormat": "Ausnahmen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -9442,7 +9442,7 @@
       "id": 134
     },
     {
-      "title": "Rails Queue Duration",
+      "title": "Rails-Queue-Dauer",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -9529,7 +9529,7 @@
       "id": 135
     },
     {
-      "title": "Presentable Object Render Duration",
+      "title": "Render-Dauer Presentable Objects",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -9545,7 +9545,7 @@
         {
           "refId": "A",
           "expr": "rate(gitlab_presentable_object_cacheless_render_real_duration_seconds_sum[$__rate_interval])",
-          "legendFormat": "Render Duration",
+          "legendFormat": "Render-Dauer",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -9627,7 +9627,7 @@
       "id": 137
     },
     {
-      "title": "Connection Pool Available",
+      "title": "Verf\u00fcgbare Verbindungen im Pool",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -9714,7 +9714,7 @@
       "id": 138
     },
     {
-      "title": "Connection Pool Size",
+      "title": "Verbindungspool-Gr\u00f6\u00dfe",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -9812,7 +9812,7 @@
       "id": 140
     },
     {
-      "title": "Running Threads",
+      "title": "Laufende Threads",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -9899,7 +9899,7 @@
       "id": 141
     },
     {
-      "title": "Max Expected Threads",
+      "title": "Max. erwartete Threads",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -9986,7 +9986,7 @@
       "id": 142
     },
     {
-      "title": "Memory Watchdog Violations",
+      "title": "Memory-Watchdog-Verst\u00f6\u00dfe",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -10002,7 +10002,7 @@
         {
           "refId": "A",
           "expr": "gitlab_memwd_violations_total",
-          "legendFormat": "Violations",
+          "legendFormat": "Verst\u00f6\u00dfe",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -10045,7 +10045,7 @@
       "id": 143
     },
     {
-      "title": "Memory Watchdog Handled",
+      "title": "Memory-Watchdog behoben",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -10061,7 +10061,7 @@
         {
           "refId": "A",
           "expr": "gitlab_memwd_violations_handled_total",
-          "legendFormat": "Handled",
+          "legendFormat": "Behandelt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -10104,7 +10104,7 @@
       "id": 144
     },
     {
-      "title": "Memory Watchdog Max Limit",
+      "title": "Memory-Watchdog-Limit",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -10120,7 +10120,7 @@
         {
           "refId": "A",
           "expr": "gitlab_memwd_max_memory_limit",
-          "legendFormat": "Max Limit",
+          "legendFormat": "Max. Limit",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -10163,7 +10163,7 @@
       "id": 145
     },
     {
-      "title": "Redis Cache Generation Duration",
+      "title": "Redis-Cache-Generierungsdauer",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -10179,7 +10179,7 @@
         {
           "refId": "A",
           "expr": "rate(redis_cache_generation_duration_seconds_sum[$__rate_interval])",
-          "legendFormat": "Generation Duration",
+          "legendFormat": "Generierungsdauer",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
