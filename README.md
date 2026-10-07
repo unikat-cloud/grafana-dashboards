@@ -81,7 +81,7 @@ curl -X POST -H "Content-Type: application/json" \
   https://grafana.example.com/api/dashboards/import
 ```
 
-Oder mit [grafana-dashboard-json-exporter](https://github.com/grafana/grizzly):
+Oder mit [Grizzly](https://github.com/grafana/grizzly):
 
 ```bash
 grr apply Crowdsec.json
