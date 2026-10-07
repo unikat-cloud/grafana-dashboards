@@ -5,7 +5,7 @@
 #
 # Voraussetzungen (Repository → Settings → Secrets & variables → Actions):
 #   Variable : GITLAB_REMOTE_URL   z.B. https://gitlab.unikat-cloud.de/group/repo.git
-#   Secret   : [REDACTED]]]   GitLab PAT mit Scopes: read_repository, write_repository
+#   Secret   : GITLAB_SYNC_TOKEN   GitLab PAT mit Scopes: read_repository, write_repository
 #
 # Loop-Schutz: SHA-Vergleich im Skript – Echo-Pushes werden erkannt und
 # übersprungen, es entsteht keine Schleife.

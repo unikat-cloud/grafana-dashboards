@@ -22,7 +22,7 @@ set -euo pipefail
 
 # ---- Konfiguration / Sicherheit -------------------------------------------------
 : "${TARGET_REMOTE_URL:?TARGET_REMOTE_URL fehlt}"
-: "${TARGET_TOKEN:[REDACTED]]] fehlt}"
+: "${TARGET_TOKEN:?TARGET_TOKEN fehlt}"
 : "${TARGET_USER:=oauth2}"
 : "${BRANCH:=main}"
 : "${FROM_SHA:=0000000000000000000000000000000000000000}"
