@@ -648,19 +648,19 @@
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "100 * rate(node_cpu_seconds_total{job=\"$job\",mode=\"user\"}[5m])",
-          "legendFormat": "user cpu{{cpu}}",
+          "legendFormat": "Benutzer-CPU {{cpu}}",
           "refId": "A"
         },
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "100 * rate(node_cpu_seconds_total{job=\"$job\",mode=\"system\"}[5m])",
-          "legendFormat": "system cpu{{cpu}}",
+          "legendFormat": "System-CPU {{cpu}}",
           "refId": "B"
         },
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "100 * rate(node_cpu_seconds_total{job=\"$job\",mode=\"interrupt\"}[5m])",
-          "legendFormat": "interrupt cpu{{cpu}}",
+          "legendFormat": "Interrupt-CPU {{cpu}}",
           "refId": "C"
         }
       ],
@@ -735,7 +735,7 @@
           "refId": "E"
         }
       ],
-      "title": "RAM Usage Over Time (detailliert)",
+      "title": "RAM-Auslastung \u00fcber Zeit (detailliert)",
       "type": "timeseries"
     },
     {
@@ -1027,13 +1027,13 @@
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "sum by (device) (rate(node_network_receive_errs_total{job=\"$job\"}[5m]))",
-          "legendFormat": "RX Errors {{device}}",
+          "legendFormat": "RX-Fehler {{device}}",
           "refId": "A"
         },
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "sum by (device) (rate(node_network_receive_drop_total{job=\"$job\"}[5m]))",
-          "legendFormat": "RX Drops {{device}}",
+          "legendFormat": "RX-Verw\u00fcrfe {{device}}",
           "refId": "B"
         }
       ],
@@ -1247,7 +1247,7 @@
           "expr": "node_network_receive_errs_total{job=\"$job\"}",
           "format": "table",
           "instant": true,
-          "legendFormat": "RX Errors {{device}}",
+          "legendFormat": "RX-Fehler {{device}}",
           "refId": "C"
         },
         {
@@ -1255,7 +1255,7 @@
           "expr": "node_network_transmit_errs_total{job=\"$job\"}",
           "format": "table",
           "instant": true,
-          "legendFormat": "TX Errors {{device}}",
+          "legendFormat": "TX-Fehler {{device}}",
           "refId": "D"
         }
       ],
@@ -2111,7 +2111,7 @@
           "refId": "A"
         }
       ],
-      "title": "Interrupts per Device",
+      "title": "Interrupts je Ger\u00e4t",
       "type": "timeseries"
     },
     {

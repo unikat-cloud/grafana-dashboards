@@ -2539,17 +2539,17 @@
       "targets": [
         {
           "expr": "nodejs_heap_space_size_total_bytes",
-          "legendFormat": "{{space}} Total",
+          "legendFormat": "{{space}} Gesamt",
           "refId": "A"
         },
         {
           "expr": "nodejs_heap_space_size_used_bytes",
-          "legendFormat": "{{space}} Used",
+          "legendFormat": "{{space}} Belegt",
           "refId": "B"
         },
         {
           "expr": "nodejs_heap_space_size_available_bytes",
-          "legendFormat": "{{space}} Available",
+          "legendFormat": "{{space}} Verf\u00fcgbar",
           "refId": "C"
         }
       ],

@@ -1175,7 +1175,7 @@
     },
     {
       "type": "row",
-      "title": "Puma Web Server",
+      "title": "Puma-Webserver",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -4122,7 +4122,7 @@
     },
     {
       "type": "row",
-      "title": "GitLab Cache",
+      "title": "GitLab-Cache",
       "gridPos": {
         "h": 1,
         "w": 24,
