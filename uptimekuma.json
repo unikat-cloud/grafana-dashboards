@@ -4,7 +4,7 @@
   "tags": [
     "uptime-kuma",
     "prometheus",
-    "monitoring"
+    "\u00fcberwachung"
   ],
   "timezone": "browser",
   "schemaVersion": 39,
@@ -156,7 +156,7 @@
   "panels": [
     {
       "type": "row",
-      "title": "Overview",
+      "title": "\u00dcbersicht",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -169,7 +169,7 @@
     {
       "id": 2,
       "type": "stat",
-      "title": "Monitors Total",
+      "title": "Monitore gesamt",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -208,7 +208,7 @@
     {
       "id": 3,
       "type": "stat",
-      "title": "Currently Up",
+      "title": "Aktuell online",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -263,7 +263,7 @@
     {
       "id": 4,
       "type": "stat",
-      "title": "Currently Down",
+      "title": "Aktuell offline",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -318,7 +318,7 @@
     {
       "id": 5,
       "type": "stat",
-      "title": "Avg Uptime 24h",
+      "title": "\u00d8 Uptime 24h",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -377,7 +377,7 @@
     {
       "id": 6,
       "type": "stat",
-      "title": "Avg Response Time",
+      "title": "\u00d8 Antwortzeit",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -436,7 +436,7 @@
     {
       "id": 7,
       "type": "stat",
-      "title": "P95 Response Time 24h",
+      "title": "P95-Antwortzeit 24h",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -494,7 +494,7 @@
     },
     {
       "type": "row",
-      "title": "Timeline",
+      "title": "Zeitverlauf",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -507,7 +507,7 @@
     {
       "id": 9,
       "type": "timeseries",
-      "title": "Status Timeline",
+      "title": "Status-Zeitverlauf",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -541,11 +541,11 @@
               "type": "value",
               "options": {
                 "0": {
-                  "text": "Down",
+                  "text": "Offline",
                   "color": "red"
                 },
                 "1": {
-                  "text": "Up",
+                  "text": "Online",
                   "color": "green"
                 }
               }
@@ -567,7 +567,7 @@
     {
       "id": 10,
       "type": "timeseries",
-      "title": "Response Time Timeline",
+      "title": "Antwortzeit-Zeitverlauf",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -610,7 +610,7 @@
     },
     {
       "type": "row",
-      "title": "Monitor Details",
+      "title": "Monitor-Details",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -623,7 +623,7 @@
     {
       "id": 12,
       "type": "table",
-      "title": "Uptime Ratio per Monitor",
+      "title": "Uptime-Ratio je Monitor",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -733,7 +733,7 @@
     {
       "id": 13,
       "type": "bargauge",
-      "title": "Current Response Time per Monitor",
+      "title": "Aktuelle Antwortzeit je Monitor",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -795,7 +795,7 @@
     {
       "id": 14,
       "type": "bargauge",
-      "title": "Uptime Ratio ($window) per Monitor",
+      "title": "Uptime-Ratio ($window) je Monitor",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -861,7 +861,7 @@
     {
       "id": 15,
       "type": "bargauge",
-      "title": "Avg Response Time ($window) per Monitor",
+      "title": "\u00d8 Antwortzeit ($window) je Monitor",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -922,7 +922,7 @@
     },
     {
       "type": "row",
-      "title": "Aggregated Metrics",
+      "title": "Aggregierte Metriken",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -935,7 +935,7 @@
     {
       "id": 17,
       "type": "bargauge",
-      "title": "Monitors by Type",
+      "title": "Monitore nach Typ",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -976,7 +976,7 @@
     {
       "id": 18,
       "type": "bargauge",
-      "title": "Avg Response Time by Type",
+      "title": "\u00d8 Antwortzeit nach Typ",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1037,7 +1037,7 @@
     {
       "id": 19,
       "type": "bargauge",
-      "title": "Uptime 24h by Type",
+      "title": "Uptime 24h nach Typ",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1097,7 +1097,7 @@
     },
     {
       "type": "row",
-      "title": "Status Changes & Issues",
+      "title": "Statuswechsel & Probleme",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -1110,7 +1110,7 @@
     {
       "id": 21,
       "type": "bargauge",
-      "title": "Status Changes 24h",
+      "title": "Statuswechsel 24h",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1171,7 +1171,7 @@
     {
       "id": 22,
       "type": "bargauge",
-      "title": "Current Down Monitors",
+      "title": "Aktuell ausgefallene Monitore",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1210,7 +1210,7 @@
               "type": "value",
               "options": {
                 "0": {
-                  "text": "Down",
+                  "text": "Offline",
                   "color": "red"
                 }
               }
@@ -1223,7 +1223,7 @@
     {
       "id": 23,
       "type": "bargauge",
-      "title": "Monitors with Low Uptime (< 99%)",
+      "title": "Monitore mit niedriger Uptime (< 99 %)",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1288,7 +1288,7 @@
     {
       "id": 24,
       "type": "bargauge",
-      "title": "Monitors with High Response Time (> 200ms)",
+      "title": "Monitore mit hoher Antwortzeit (> 200 ms)",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1348,7 +1348,7 @@
     },
     {
       "type": "row",
-      "title": "SSL/TLS Certificates",
+      "title": "SSL/TLS-Zertifikate",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -1361,7 +1361,7 @@
     {
       "id": 26,
       "type": "stat",
-      "title": "Certificates Valid",
+      "title": "G\u00fcltige Zertifikate",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1403,7 +1403,7 @@
               "type": "value",
               "options": {
                 "1": {
-                  "text": "VALID"
+                  "text": "G\u00fcltig"
                 }
               }
             },
@@ -1411,7 +1411,7 @@
               "type": "value",
               "options": {
                 "0": {
-                  "text": "INVALID"
+                  "text": "Ung\u00fcltig"
                 }
               }
             }
@@ -1438,7 +1438,7 @@
     {
       "id": 27,
       "type": "bargauge",
-      "title": "Days to Certificate Expiry",
+      "title": "Tage bis Zertifikatsablauf",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1504,7 +1504,7 @@
     },
     {
       "type": "row",
-      "title": "System (Uptime Kuma Process)",
+      "title": "System (Uptime-Kuma-Prozess)",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -1517,7 +1517,7 @@
     {
       "id": 29,
       "type": "stat",
-      "title": "Process Uptime",
+      "title": "Prozess-Uptime",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1563,7 +1563,7 @@
     {
       "id": 30,
       "type": "stat",
-      "title": "CPU Total",
+      "title": "CPU gesamt",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1626,7 +1626,7 @@
     {
       "id": 31,
       "type": "gauge",
-      "title": "Resident Memory",
+      "title": "Residenter Speicher",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1688,7 +1688,7 @@
     {
       "id": 32,
       "type": "stat",
-      "title": "Virtual Memory",
+      "title": "Virtueller Speicher",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1702,7 +1702,7 @@
       "targets": [
         {
           "expr": "process_virtual_memory_bytes",
-          "legendFormat": "Virtual",
+          "legendFormat": "Virtuell",
           "refId": "A",
           "instant": true
         }
@@ -1734,7 +1734,7 @@
     {
       "id": 33,
       "type": "gauge",
-      "title": "Heap Memory",
+      "title": "Heap-Speicher",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1796,7 +1796,7 @@
     {
       "id": 34,
       "type": "stat",
-      "title": "Open FDs",
+      "title": "Offene FDs",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1810,7 +1810,7 @@
       "targets": [
         {
           "expr": "process_open_fds",
-          "legendFormat": "Open",
+          "legendFormat": "Offen",
           "refId": "A",
           "instant": true
         }
@@ -1859,7 +1859,7 @@
     },
     {
       "type": "row",
-      "title": "Node.js Runtime",
+      "title": "Node.js-Laufzeit",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -1872,7 +1872,7 @@
     {
       "id": 36,
       "type": "stat",
-      "title": "Event Loop Lag",
+      "title": "Event-Loop-Verz\u00f6gerung",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -1886,7 +1886,7 @@
       "targets": [
         {
           "expr": "nodejs_eventloop_lag_seconds",
-          "legendFormat": "Lag",
+          "legendFormat": "Verz\u00f6gerung",
           "refId": "A",
           "instant": true
         }
@@ -2058,7 +2058,7 @@
       "targets": [
         {
           "expr": "nodejs_eventloop_lag_mean_seconds",
-          "legendFormat": "Mean",
+          "legendFormat": "Mittel",
           "refId": "A",
           "instant": true
         }
@@ -2279,7 +2279,7 @@
     {
       "id": 44,
       "type": "gauge",
-      "title": "Heap Usage",
+      "title": "Heap-Auslastung",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2293,7 +2293,7 @@
       "targets": [
         {
           "expr": "nodejs_heap_size_used_bytes",
-          "legendFormat": "Used",
+          "legendFormat": "Belegt",
           "refId": "A",
           "instant": true
         }
@@ -2341,7 +2341,7 @@
     {
       "id": 45,
       "type": "stat",
-      "title": "Heap Total vs Used",
+      "title": "Heap gesamt vs. belegt",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2355,13 +2355,13 @@
       "targets": [
         {
           "expr": "nodejs_heap_size_total_bytes",
-          "legendFormat": "Total",
+          "legendFormat": "Gesamt",
           "refId": "A",
           "instant": true
         },
         {
           "expr": "nodejs_heap_size_used_bytes",
-          "legendFormat": "Used",
+          "legendFormat": "Belegt",
           "refId": "B",
           "instant": true
         },
@@ -2416,7 +2416,7 @@
     {
       "id": 46,
       "type": "gauge",
-      "title": "Heap Usage %",
+      "title": "Heap-Auslastung %",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2479,7 +2479,7 @@
     {
       "id": 47,
       "type": "stat",
-      "title": "External Memory",
+      "title": "Externer Speicher",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2493,7 +2493,7 @@
       "targets": [
         {
           "expr": "nodejs_external_memory_bytes",
-          "legendFormat": "External",
+          "legendFormat": "Extern",
           "refId": "A",
           "instant": true
         }
@@ -2525,7 +2525,7 @@
     {
       "id": 48,
       "type": "table",
-      "title": "Heap Spaces",
+      "title": "Heap-Bereiche",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2614,7 +2614,7 @@
     {
       "id": 50,
       "type": "stat",
-      "title": "GC Count",
+      "title": "GC-Anzahl",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2660,7 +2660,7 @@
     {
       "id": 51,
       "type": "stat",
-      "title": "GC Duration",
+      "title": "GC-Dauer",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2706,7 +2706,7 @@
     {
       "id": 52,
       "type": "stat",
-      "title": "Active Handles",
+      "title": "Aktive Handles",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2752,7 +2752,7 @@
     {
       "id": 53,
       "type": "stat",
-      "title": "Handles Total",
+      "title": "Handles gesamt",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2766,7 +2766,7 @@
       "targets": [
         {
           "expr": "nodejs_active_handles_total",
-          "legendFormat": "Total",
+          "legendFormat": "Gesamt",
           "refId": "A",
           "instant": true
         }
@@ -2798,7 +2798,7 @@
     {
       "id": 54,
       "type": "stat",
-      "title": "Active Requests",
+      "title": "Aktive Anfragen",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2812,7 +2812,7 @@
       "targets": [
         {
           "expr": "nodejs_active_requests_total",
-          "legendFormat": "Requests",
+          "legendFormat": "Anfragen",
           "refId": "A",
           "instant": true
         }
@@ -2844,7 +2844,7 @@
     {
       "id": 55,
       "type": "stat",
-      "title": "Express Connections",
+      "title": "Express-Verbindungen",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2858,7 +2858,7 @@
       "targets": [
         {
           "expr": "expressjs_number_of_open_connections",
-          "legendFormat": "Open",
+          "legendFormat": "Offen",
           "refId": "A",
           "instant": true
         }
@@ -2889,7 +2889,7 @@
     },
     {
       "type": "row",
-      "title": "Versions",
+      "title": "Versionen",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -2992,7 +2992,7 @@
       }
     }
   ],
-  "description": "Uptime Kuma monitor status, response times, certificates, and the underlying Node.js runtime. Filter by monitor, type and time window.",
+  "description": "Uptime Kuma: Monitor-Status, Antwortzeiten, Zertifikate und die zugrunde liegende Node.js-Laufzeit. Filter nach Monitor, Typ und Zeitfenster.",
   "__inputs": [
     {
       "name": "DS_PROMETHEUS",

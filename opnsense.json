@@ -72,7 +72,7 @@
   "panels": [
     {
       "type": "row",
-      "title": "Overview",
+      "title": "\u00dcbersicht",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -95,12 +95,12 @@
                 "0": {
                   "color": "red",
                   "index": 0,
-                  "text": "DOWN"
+                  "text": "Offline"
                 },
                 "1": {
                   "color": "green",
                   "index": 1,
-                  "text": "UP"
+                  "text": "Online"
                 }
               },
               "type": "value"
@@ -150,7 +150,7 @@
           "refId": "A"
         }
       ],
-      "title": "OPNsense Status",
+      "title": "OPNsense-Status",
       "type": "stat"
     },
     {
@@ -274,7 +274,7 @@
           "refId": "A"
         }
       ],
-      "title": "CPU Usage",
+      "title": "CPU-Auslastung",
       "type": "stat"
     },
     {
@@ -335,7 +335,7 @@
           "refId": "A"
         }
       ],
-      "title": "RAM Usage",
+      "title": "RAM-Nutzung",
       "type": "stat"
     },
     {
@@ -386,7 +386,7 @@
           "refId": "A"
         }
       ],
-      "title": "RAM Total",
+      "title": "RAM gesamt",
       "type": "stat"
     },
     {
@@ -457,7 +457,7 @@
           "refId": "C"
         }
       ],
-      "title": "Load Average",
+      "title": "Systemlast",
       "type": "stat"
     },
     {
@@ -473,7 +473,7 @@
                 "0": {
                   "color": "green",
                   "index": 0,
-                  "text": "No Swap"
+                  "text": "Kein Swap"
                 }
               },
               "type": "value"
@@ -520,7 +520,7 @@
           "refId": "A"
         }
       ],
-      "title": "Swap Total",
+      "title": "Swap gesamt",
       "type": "stat"
     },
     {
@@ -536,7 +536,7 @@
                 "0": {
                   "color": "green",
                   "index": 0,
-                  "text": "Green"
+                  "text": "Gr\u00fcn"
                 },
                 "1": {
                   "color": "red",
@@ -591,7 +591,7 @@
           "refId": "A"
         }
       ],
-      "title": "NTP Sanity",
+      "title": "NTP-Zustand",
       "type": "stat"
     },
     {
@@ -664,7 +664,7 @@
           "refId": "C"
         }
       ],
-      "title": "CPU Usage per Mode",
+      "title": "CPU-Auslastung je Modus",
       "type": "timeseries"
     },
     {
@@ -707,25 +707,25 @@
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "node_memory_free_bytes{job=\"$job\"} + node_memory_inactive_bytes{job=\"$job\"}",
-          "legendFormat": "Available (Free+Inactive)",
+          "legendFormat": "Verf\u00fcgbar (Frei+Inaktiv)",
           "refId": "A"
         },
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "node_memory_free_bytes{job=\"$job\"}",
-          "legendFormat": "Free",
+          "legendFormat": "Frei",
           "refId": "B"
         },
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "node_memory_wired_bytes{job=\"$job\"} + node_memory_active_bytes{job=\"$job\"}",
-          "legendFormat": "Used (Wired+Active)",
+          "legendFormat": "Belegt (Wired+Aktiv)",
           "refId": "C"
         },
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "node_memory_inactive_bytes{job=\"$job\"}",
-          "legendFormat": "Inactive",
+          "legendFormat": "Inaktiv",
           "refId": "D"
         },
         {
@@ -740,7 +740,7 @@
     },
     {
       "type": "row",
-      "title": "Network Throughput",
+      "title": "Netzwerkdurchsatz",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -794,7 +794,7 @@
           "refId": "A"
         }
       ],
-      "title": "Network Receive (alle Interfaces)",
+      "title": "Netzwerk-Empfang (alle Interfaces)",
       "type": "timeseries"
     },
     {
@@ -841,7 +841,7 @@
           "refId": "A"
         }
       ],
-      "title": "Network Transmit (alle Interfaces)",
+      "title": "Netzwerk-Senden (alle Interfaces)",
       "type": "timeseries"
     },
     {
@@ -919,7 +919,7 @@
           "refId": "B"
         }
       ],
-      "title": "WireGuard Traffic",
+      "title": "WireGuard-Verkehr",
       "type": "timeseries"
     },
     {
@@ -984,7 +984,7 @@
           "refId": "D"
         }
       ],
-      "title": "WAN (vtnet0) vs LAN (vtnet1) Traffic",
+      "title": "WAN (vtnet0) vs. LAN (vtnet1) Verkehr",
       "type": "timeseries"
     },
     {
@@ -1037,7 +1037,7 @@
           "refId": "B"
         }
       ],
-      "title": "Network RX Errors & Drops",
+      "title": "Netzwerk-RX-Fehler & -Verw\u00fcrfe",
       "type": "timeseries"
     },
     {
@@ -1090,12 +1090,12 @@
           "refId": "B"
         }
       ],
-      "title": "Network Packets RX / TX",
+      "title": "Netzwerkpakete RX / TX",
       "type": "timeseries"
     },
     {
       "type": "row",
-      "title": "Network Connections",
+      "title": "Netzwerkverbindungen",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -1145,17 +1145,17 @@
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "rate(node_netstat_tcp_receive_packets_total{job=\"$job\"}[5m])",
-          "legendFormat": "TCP Received",
+          "legendFormat": "TCP empfangen",
           "refId": "A"
         },
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "rate(node_netstat_tcp_transmit_packets_total{job=\"$job\"}[5m])",
-          "legendFormat": "TCP Transmitted",
+          "legendFormat": "TCP gesendet",
           "refId": "B"
         }
       ],
-      "title": "TCP Packet Rate",
+      "title": "TCP-Paketrate",
       "type": "timeseries"
     },
     {
@@ -1259,7 +1259,7 @@
           "refId": "D"
         }
       ],
-      "title": "Network Interface Overview (Live)",
+      "title": "Netzwerk-Interface-\u00dcbersicht (Live)",
       "transformations": [
         {
           "id": "merge",
@@ -1287,7 +1287,7 @@
     },
     {
       "type": "row",
-      "title": "Disk / Filesystem",
+      "title": "Disk / Dateisystem",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -1442,7 +1442,7 @@
           "expr": "100 * (1 - node_filesystem_avail_bytes{job=\"$job\",fstype!~\"tmpfs|devfs|fdescfs|nullfs|procfs\"} / node_filesystem_size_bytes{job=\"$job\",fstype!~\"tmpfs|devfs|fdescfs|nullfs|procfs\"})",
           "format": "table",
           "instant": true,
-          "legendFormat": "Used %",
+          "legendFormat": "Belegt %",
           "refId": "B"
         },
         {
@@ -1450,11 +1450,11 @@
           "expr": "100 * (1 - node_filesystem_files_free{job=\"$job\",fstype!~\"tmpfs|devfs|fdescfs|nullfs|procfs\"} / node_filesystem_files{job=\"$job\",fstype!~\"tmpfs|devfs|fdescfs|nullfs|procfs\"})",
           "format": "table",
           "instant": true,
-          "legendFormat": "Inode Used %",
+          "legendFormat": "Inode belegt %",
           "refId": "C"
         }
       ],
-      "title": "Filesystem \u00dcbersicht + Inodes",
+      "title": "Dateisystem-\u00dcbersicht + Inodes",
       "transformations": [
         {
           "id": "merge",
@@ -1507,7 +1507,7 @@
           "refId": "A"
         }
       ],
-      "title": "Disk Read",
+      "title": "Disk-Lesen",
       "type": "timeseries"
     },
     {
@@ -1554,7 +1554,7 @@
           "refId": "A"
         }
       ],
-      "title": "Disk Write",
+      "title": "Disk-Schreiben",
       "type": "timeseries"
     },
     {
@@ -1615,7 +1615,7 @@
           "refId": "A"
         }
       ],
-      "title": "Filesystem Auslastung (Gauge)",
+      "title": "Dateisystem-Auslastung (Gauge)",
       "type": "bargauge"
     },
     {
@@ -1676,7 +1676,7 @@
           "refId": "A"
         }
       ],
-      "title": "Inode Auslastung (Gauge)",
+      "title": "Inode-Auslastung (Gauge)",
       "type": "bargauge"
     },
     {
@@ -1723,7 +1723,7 @@
           "refId": "A"
         }
       ],
-      "title": "Disk IO Operations/s",
+      "title": "Disk-IO-Operationen/s",
       "type": "timeseries"
     },
     {
@@ -1799,7 +1799,7 @@
           "refId": "A"
         }
       ],
-      "title": "CPU Temperatur",
+      "title": "CPU-Temperatur",
       "type": "timeseries"
     },
     {
@@ -1889,7 +1889,7 @@
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "irate(node_exec_context_switches_total{job=\"$job\"}[$__rate_interval])",
-          "legendFormat": "Context Switches",
+          "legendFormat": "Kontextwechsel",
           "refId": "A"
         },
         {
@@ -1899,7 +1899,7 @@
           "refId": "B"
         }
       ],
-      "title": "Context Switches & Forks",
+      "title": "Kontextwechsel & Forks",
       "type": "timeseries"
     },
     {
@@ -1942,7 +1942,7 @@
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "irate(node_exec_system_calls_total{job=\"$job\"}[$__rate_interval])",
-          "legendFormat": "System Calls",
+          "legendFormat": "Systemaufrufe",
           "refId": "A"
         },
         {
@@ -1952,7 +1952,7 @@
           "refId": "B"
         }
       ],
-      "title": "System Calls & Traps",
+      "title": "Systemaufrufe & Traps",
       "type": "timeseries"
     },
     {
@@ -1995,17 +1995,17 @@
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "irate(node_exec_device_interrupts_total{job=\"$job\"}[$__rate_interval])",
-          "legendFormat": "Device Interrupts",
+          "legendFormat": "Ger\u00e4te-Interrupts",
           "refId": "A"
         },
         {
           "datasource": "${DS_PROMETHEUS}",
           "expr": "irate(node_exec_software_interrupts_total{job=\"$job\"}[$__rate_interval])",
-          "legendFormat": "Software Interrupts",
+          "legendFormat": "Software-Interrupts",
           "refId": "B"
         }
       ],
-      "title": "Device & Software Interrupts",
+      "title": "Ger\u00e4te- & Software-Interrupts",
       "type": "timeseries"
     },
     {
@@ -2188,7 +2188,7 @@
           "refId": "D"
         }
       ],
-      "title": "ZFS ARC Size (Actual vs Max/Min)",
+      "title": "ZFS-ARC-Gr\u00f6\u00dfe (Ist vs. Max/Min)",
       "type": "timeseries"
     },
     {
@@ -2301,12 +2301,12 @@
           "refId": "A"
         }
       ],
-      "title": "ZFS ARC Hit Ratio",
+      "title": "ZFS-ARC-Trefferquote",
       "type": "stat"
     },
     {
       "type": "row",
-      "title": "System Information",
+      "title": "Systeminformationen",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -2319,7 +2319,7 @@
     {
       "id": 40,
       "type": "table",
-      "title": "System / Exporter Info",
+      "title": "System- / Exporter-Info",
       "datasource": {
         "type": "prometheus",
         "uid": "${DS_PROMETHEUS}"
@@ -2527,7 +2527,7 @@
           "refId": "A"
         }
       ],
-      "title": "NTP Reference Timestamp",
+      "title": "NTP-Referenzzeitstempel",
       "type": "stat"
     },
     {
@@ -2580,7 +2580,7 @@
           "refId": "A"
         }
       ],
-      "title": "Timezone Offset",
+      "title": "Zeitzonen-Offset",
       "type": "stat"
     }
   ],
@@ -2592,7 +2592,7 @@
     "prometheus",
     "firewall",
     "freebsd",
-    "network"
+    "netzwerk"
   ],
   "templating": {
     "list": [
@@ -2651,9 +2651,9 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "OPNsense Central Dashboard",
+  "title": "OPNsense Zentral-Dashboard",
   "uid": "opnsense",
   "version": 2,
   "weekStart": null,
-  "description": "OPNsense firewall monitoring: status, CPU/RAM, network throughput, disk/filesystem, ZFS, system internals and live interfaces. Requires opnsense-exporter."
+  "description": "OPNsense-Firewall-Monitoring: Status, CPU/RAM, Netzwerkdurchsatz, Disk/Dateisystem, ZFS, System-Interna und Live-Interfaces. Erfordert opnsense-exporter."
 }

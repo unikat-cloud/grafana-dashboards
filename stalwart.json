@@ -43,7 +43,7 @@
   ],
   "title": "Stalwart Mail Server",
   "uid": "stalwart",
-  "description": "Stalwart Mail Server: SMTP, IMAP, POP3, HTTP, delivery, security and authentication metrics.",
+  "description": "Stalwart Mail Server: SMTP-, IMAP-, POP3-, HTTP-, Zustell-, Sicherheits- und Authentifizierungs-Metriken.",
   "tags": [
     "stalwart",
     "mail",
@@ -63,7 +63,7 @@
   "panels": [
     {
       "type": "row",
-      "title": "Server Overview",
+      "title": "Server-\u00dcbersicht",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -76,7 +76,7 @@
     {
       "id": 2,
       "type": "stat",
-      "title": "Server Memory",
+      "title": "Server-Speicher",
       "gridPos": {
         "h": 3,
         "w": 3,
@@ -86,7 +86,7 @@
       "targets": [
         {
           "expr": "server_memory",
-          "legendFormat": "Memory",
+          "legendFormat": "Speicher",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -136,7 +136,7 @@
     {
       "id": 3,
       "type": "stat",
-      "title": "Users",
+      "title": "Benutzer",
       "gridPos": {
         "h": 3,
         "w": 3,
@@ -146,7 +146,7 @@
       "targets": [
         {
           "expr": "user_count",
-          "legendFormat": "Users",
+          "legendFormat": "Benutzer",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -236,7 +236,7 @@
     {
       "id": 5,
       "type": "stat",
-      "title": "SMTP Requests (total)",
+      "title": "SMTP-Anfragen (gesamt)",
       "gridPos": {
         "h": 3,
         "w": 3,
@@ -286,7 +286,7 @@
     {
       "id": 6,
       "type": "stat",
-      "title": "IMAP Requests (total)",
+      "title": "IMAP-Anfragen (gesamt)",
       "gridPos": {
         "h": 3,
         "w": 3,
@@ -336,7 +336,7 @@
     {
       "id": 7,
       "type": "stat",
-      "title": "HTTP Requests (total)",
+      "title": "HTTP-Anfragen (gesamt)",
       "gridPos": {
         "h": 3,
         "w": 3,
@@ -386,7 +386,7 @@
     {
       "id": 8,
       "type": "stat",
-      "title": "HTTP Requests Rate",
+      "title": "HTTP-Anfragenrate",
       "gridPos": {
         "h": 3,
         "w": 3,
@@ -437,7 +437,7 @@
     {
       "id": 9,
       "type": "bargauge",
-      "title": "Active Connections",
+      "title": "Aktive Verbindungen",
       "gridPos": {
         "h": 3,
         "w": 3,
@@ -471,7 +471,7 @@
         },
         {
           "expr": "delivery_active_connections",
-          "legendFormat": "Delivery",
+          "legendFormat": "Zustellung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -538,7 +538,7 @@
     },
     {
       "type": "row",
-      "title": "Active Connections & Traffic",
+      "title": "Aktive Verbindungen & Verkehr",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -551,7 +551,7 @@
     {
       "id": 11,
       "type": "timeseries",
-      "title": "Active Connections Over Time",
+      "title": "Aktive Verbindungen im Zeitverlauf",
       "gridPos": {
         "h": 6,
         "w": 12,
@@ -585,7 +585,7 @@
         },
         {
           "expr": "delivery_active_connections",
-          "legendFormat": "Delivery",
+          "legendFormat": "Zustellung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -636,7 +636,7 @@
     {
       "id": 12,
       "type": "timeseries",
-      "title": "Requests per Second by Protocol",
+      "title": "Anfragen pro Sekunde nach Protokoll",
       "gridPos": {
         "h": 6,
         "w": 12,
@@ -678,7 +678,7 @@
         },
         {
           "expr": "rate(delivery_attempt_time_count[5m])",
-          "legendFormat": "Delivery Att.",
+          "legendFormat": "Zustellversuche",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -725,7 +725,7 @@
     {
       "id": 14,
       "type": "timeseries",
-      "title": "SMTP Request Rate",
+      "title": "SMTP-Anfragenrate",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -735,7 +735,7 @@
       "targets": [
         {
           "expr": "rate(smtp_request_time_count[5m])",
-          "legendFormat": "Requests/s",
+          "legendFormat": "Anfragen/s",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -770,7 +770,7 @@
     {
       "id": 15,
       "type": "timeseries",
-      "title": "SMTP Request Duration (P50/P95/P99)",
+      "title": "SMTP-Anfragedauer (P50/P95/P99)",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -831,7 +831,7 @@
     {
       "id": 16,
       "type": "timeseries",
-      "title": "SMTP Events",
+      "title": "SMTP-Ereignisse",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -849,7 +849,7 @@
         },
         {
           "expr": "rate(smtp_ehlo_expected[5m])",
-          "legendFormat": "EHLO Expected",
+          "legendFormat": "EHLO erwartet",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -857,7 +857,7 @@
         },
         {
           "expr": "rate(smtp_did_not_say_ehlo[5m])",
-          "legendFormat": "No EHLO",
+          "legendFormat": "Kein EHLO",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -865,7 +865,7 @@
         },
         {
           "expr": "rate(smtp_mt_priority_disabled[5m])",
-          "legendFormat": "MT-Priority Disabled",
+          "legendFormat": "MT-Priority deaktiviert",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -873,7 +873,7 @@
         },
         {
           "expr": "rate(smtp_mt_priority_invalid[5m])",
-          "legendFormat": "MT-Priority Invalid",
+          "legendFormat": "MT-Priority ung\u00fcltig",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -881,7 +881,7 @@
         },
         {
           "expr": "rate(smtp_dsn_disabled[5m])",
-          "legendFormat": "DSN Disabled",
+          "legendFormat": "DSN deaktiviert",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -889,7 +889,7 @@
         },
         {
           "expr": "rate(smtp_require_tls_disabled[5m])",
-          "legendFormat": "REQUIRETLS Disabled",
+          "legendFormat": "REQUIRETLS deaktiviert",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -924,7 +924,7 @@
     {
       "id": 17,
       "type": "timeseries",
-      "title": "SMTP Errors",
+      "title": "SMTP-Fehler",
       "gridPos": {
         "h": 6,
         "w": 12,
@@ -934,7 +934,7 @@
       "targets": [
         {
           "expr": "rate(smtp_concurrency_limit_exceeded[5m])",
-          "legendFormat": "Concurrency Limit",
+          "legendFormat": "Nebenl\u00e4ufigkeitslimit",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -942,7 +942,7 @@
         },
         {
           "expr": "rate(smtp_missing_auth_directory[5m])",
-          "legendFormat": "Missing Auth Dir",
+          "legendFormat": "Auth-Verzeichnis fehlt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -950,7 +950,7 @@
         },
         {
           "expr": "rate(smtp_message_parse_failed[5m])",
-          "legendFormat": "Parse Failed",
+          "legendFormat": "Parsing fehlgeschlagen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -958,7 +958,7 @@
         },
         {
           "expr": "rate(smtp_message_too_large[5m])",
-          "legendFormat": "Too Large",
+          "legendFormat": "Zu gro\u00df",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -966,7 +966,7 @@
         },
         {
           "expr": "rate(smtp_loop_detected[5m])",
-          "legendFormat": "Loop Detected",
+          "legendFormat": "Schleife erkannt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -974,7 +974,7 @@
         },
         {
           "expr": "rate(smtp_auth_not_allowed[5m])",
-          "legendFormat": "Auth Not Allowed",
+          "legendFormat": "Auth nicht erlaubt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -982,7 +982,7 @@
         },
         {
           "expr": "rate(delivery_greeting_failed[5m])",
-          "legendFormat": "Delivery Greeting Failed",
+          "legendFormat": "Zustell-Begr\u00fc\u00dfung fehlgeschlagen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -990,7 +990,7 @@
         },
         {
           "expr": "rate(delivery_auth_failed[5m])",
-          "legendFormat": "Delivery Auth Failed",
+          "legendFormat": "Zustell-Auth fehlgeschlagen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1025,7 +1025,7 @@
     {
       "id": 18,
       "type": "timeseries",
-      "title": "SMTP Concurrency Limit",
+      "title": "SMTP-Nebenl\u00e4ufigkeitslimit",
       "gridPos": {
         "h": 6,
         "w": 12,
@@ -1035,7 +1035,7 @@
       "targets": [
         {
           "expr": "rate(smtp_concurrency_limit_exceeded[5m])",
-          "legendFormat": "Exceeded",
+          "legendFormat": "\u00dcberschritten",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1069,7 +1069,7 @@
     },
     {
       "type": "row",
-      "title": "Security & Authentication",
+      "title": "Sicherheit & Authentifizierung",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -1082,7 +1082,7 @@
     {
       "id": 20,
       "type": "stat",
-      "title": "SPF Pass Rate",
+      "title": "SPF-Erfolgsrate",
       "gridPos": {
         "h": 3,
         "w": 4,
@@ -1092,7 +1092,7 @@
       "targets": [
         {
           "expr": "rate(spf_pass[5m])",
-          "legendFormat": "Pass/s",
+          "legendFormat": "Erfolg/s",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1133,7 +1133,7 @@
     {
       "id": 21,
       "type": "stat",
-      "title": "SPF Fail Rate",
+      "title": "SPF-Fehlerrate",
       "gridPos": {
         "h": 3,
         "w": 4,
@@ -1143,7 +1143,7 @@
       "targets": [
         {
           "expr": "rate(spf_fail[5m])",
-          "legendFormat": "Fail/s",
+          "legendFormat": "Fehler/s",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1188,7 +1188,7 @@
     {
       "id": 22,
       "type": "stat",
-      "title": "IPREV Pass Rate",
+      "title": "IPREV-Erfolgsrate",
       "gridPos": {
         "h": 3,
         "w": 4,
@@ -1198,7 +1198,7 @@
       "targets": [
         {
           "expr": "rate(smtp_iprev_pass[5m])",
-          "legendFormat": "Pass/s",
+          "legendFormat": "Erfolg/s",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1239,7 +1239,7 @@
     {
       "id": 23,
       "type": "stat",
-      "title": "IPREV Fail Rate",
+      "title": "IPREV-Fehlerrate",
       "gridPos": {
         "h": 3,
         "w": 4,
@@ -1249,7 +1249,7 @@
       "targets": [
         {
           "expr": "rate(smtp_iprev_fail[5m])",
-          "legendFormat": "Fail/s",
+          "legendFormat": "Fehler/s",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1294,7 +1294,7 @@
     {
       "id": 24,
       "type": "stat",
-      "title": "Auth Warnings",
+      "title": "Auth-Warnungen",
       "gridPos": {
         "h": 3,
         "w": 4,
@@ -1304,7 +1304,7 @@
       "targets": [
         {
           "expr": "rate(auth_warning[5m])",
-          "legendFormat": "Warnings/s",
+          "legendFormat": "Warnungen/s",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1349,7 +1349,7 @@
     {
       "id": 25,
       "type": "stat",
-      "title": "Blocked IPs (total)",
+      "title": "Blockierte IPs (gesamt)",
       "gridPos": {
         "h": 3,
         "w": 4,
@@ -1359,7 +1359,7 @@
       "targets": [
         {
           "expr": "security_ip_blocked",
-          "legendFormat": "Blocked",
+          "legendFormat": "Blockiert",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1403,7 +1403,7 @@
     {
       "id": 26,
       "type": "timeseries",
-      "title": "SPF Check Rate",
+      "title": "SPF-Pr\u00fcfrate",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1413,7 +1413,7 @@
       "targets": [
         {
           "expr": "rate(spf_pass[5m])",
-          "legendFormat": "Pass",
+          "legendFormat": "Erfolg",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1421,7 +1421,7 @@
         },
         {
           "expr": "rate(spf_fail[5m])",
-          "legendFormat": "Fail",
+          "legendFormat": "Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1429,7 +1429,7 @@
         },
         {
           "expr": "rate(spf_temp_error[5m])",
-          "legendFormat": "Temp Error",
+          "legendFormat": "Tempor\u00e4rer Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1437,7 +1437,7 @@
         },
         {
           "expr": "rate(spf_perm_error[5m])",
-          "legendFormat": "Perm Error",
+          "legendFormat": "Permanenter Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1472,7 +1472,7 @@
     {
       "id": 27,
       "type": "timeseries",
-      "title": "IPREV Checks",
+      "title": "IPREV-Pr\u00fcfungen",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1482,7 +1482,7 @@
       "targets": [
         {
           "expr": "rate(smtp_iprev_pass[5m])",
-          "legendFormat": "Pass",
+          "legendFormat": "Erfolg",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1490,7 +1490,7 @@
         },
         {
           "expr": "rate(smtp_iprev_fail[5m])",
-          "legendFormat": "Fail",
+          "legendFormat": "Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1525,7 +1525,7 @@
     {
       "id": 28,
       "type": "timeseries",
-      "title": "Security & Auth Events",
+      "title": "Sicherheits- & Auth-Ereignisse",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1535,7 +1535,7 @@
       "targets": [
         {
           "expr": "rate(security_ip_blocked[5m])",
-          "legendFormat": "IP Blocked",
+          "legendFormat": "IP blockiert",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1543,7 +1543,7 @@
         },
         {
           "expr": "rate(security_loiter_ban[5m])",
-          "legendFormat": "Loiter Ban",
+          "legendFormat": "Loiter-Sperre",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1551,7 +1551,7 @@
         },
         {
           "expr": "rate(auth_warning[5m])",
-          "legendFormat": "Auth Warning",
+          "legendFormat": "Auth-Warnung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1559,7 +1559,7 @@
         },
         {
           "expr": "rate(smtp_auth_not_allowed[5m])",
-          "legendFormat": "Auth Not Allowed",
+          "legendFormat": "Auth nicht erlaubt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1593,7 +1593,7 @@
     },
     {
       "type": "row",
-      "title": "Delivery",
+      "title": "Zustellung",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -1606,7 +1606,7 @@
     {
       "id": 30,
       "type": "timeseries",
-      "title": "Delivery Attempts & Starts",
+      "title": "Zustellversuche & -starts",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1616,7 +1616,7 @@
       "targets": [
         {
           "expr": "rate(delivery_domain_delivery_start[5m])",
-          "legendFormat": "Delivery Starts",
+          "legendFormat": "Zustellstarts",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1624,7 +1624,7 @@
         },
         {
           "expr": "rate(delivery_attempt_time_count[5m])",
-          "legendFormat": "Delivery Attempts",
+          "legendFormat": "Zustellversuche",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1632,7 +1632,7 @@
         },
         {
           "expr": "rate(delivery_connect[5m])",
-          "legendFormat": "Connections",
+          "legendFormat": "Verbindungen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1675,7 +1675,7 @@
     {
       "id": 31,
       "type": "timeseries",
-      "title": "Delivery Attempt Duration (P50/P95/P99)",
+      "title": "Dauer der Zustellversuche (P50/P95/P99)",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1736,7 +1736,7 @@
     {
       "id": 32,
       "type": "timeseries",
-      "title": "Delivery Total Time (Submission \u2192 Delivery)",
+      "title": "Gesamtzeit Zustellung (Aufgabe \u2192 Zustellung)",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1797,7 +1797,7 @@
     {
       "id": 33,
       "type": "timeseries",
-      "title": "Delivery Errors",
+      "title": "Zustellfehler",
       "gridPos": {
         "h": 6,
         "w": 24,
@@ -1807,7 +1807,7 @@
       "targets": [
         {
           "expr": "rate(delivery_greeting_failed[5m])",
-          "legendFormat": "Greeting Failed",
+          "legendFormat": "Begr\u00fc\u00dfung fehlgeschlagen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1815,7 +1815,7 @@
         },
         {
           "expr": "rate(delivery_auth_failed[5m])",
-          "legendFormat": "Auth Failed",
+          "legendFormat": "Auth fehlgeschlagen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1862,7 +1862,7 @@
     {
       "id": 35,
       "type": "timeseries",
-      "title": "IMAP Request Rate",
+      "title": "IMAP-Anfragenrate",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1872,7 +1872,7 @@
       "targets": [
         {
           "expr": "rate(imap_request_time_count[5m])",
-          "legendFormat": "Requests/s",
+          "legendFormat": "Anfragen/s",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1907,7 +1907,7 @@
     {
       "id": 36,
       "type": "timeseries",
-      "title": "IMAP Request Duration (P50/P95/P99)",
+      "title": "IMAP-Anfragedauer (P50/P95/P99)",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1968,7 +1968,7 @@
     {
       "id": 37,
       "type": "timeseries",
-      "title": "IMAP Commands Rate",
+      "title": "IMAP-Befehlsrate",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -1978,7 +1978,7 @@
       "targets": [
         {
           "expr": "rate(imap_connection_start[5m])",
-          "legendFormat": "Connections Started",
+          "legendFormat": "Verbindungen gestartet",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2057,7 +2057,7 @@
     {
       "id": 39,
       "type": "timeseries",
-      "title": "HTTP Request Rate",
+      "title": "HTTP-Anfragenrate",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -2067,7 +2067,7 @@
       "targets": [
         {
           "expr": "rate(http_request_time_count[5m])",
-          "legendFormat": "Requests/s",
+          "legendFormat": "Anfragen/s",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2102,7 +2102,7 @@
     {
       "id": 40,
       "type": "timeseries",
-      "title": "HTTP Request Duration (P50/P95/P99)",
+      "title": "HTTP-Anfragedauer (P50/P95/P99)",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -2163,7 +2163,7 @@
     {
       "id": 41,
       "type": "timeseries",
-      "title": "POP3 Request Rate & Duration",
+      "title": "POP3-Anfragenrate & -dauer",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -2173,7 +2173,7 @@
       "targets": [
         {
           "expr": "rate(pop3_request_time_count[5m])",
-          "legendFormat": "Requests/s",
+          "legendFormat": "Anfragen/s",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2181,7 +2181,7 @@
         },
         {
           "expr": "histogram_quantile(0.95, sum(rate(pop3_request_time_bucket[5m])) by (le))",
-          "legendFormat": "P95 Duration (ms)",
+          "legendFormat": "P95-Dauer (ms)",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2223,7 +2223,7 @@
     },
     {
       "type": "row",
-      "title": "Messages & Resources",
+      "title": "Nachrichten & Ressourcen",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -2236,7 +2236,7 @@
     {
       "id": 43,
       "type": "timeseries",
-      "title": "Message Size Distribution",
+      "title": "Nachrichtengr\u00f6\u00dfen-Verteilung",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -2297,7 +2297,7 @@
     {
       "id": 44,
       "type": "timeseries",
-      "title": "Authenticated Message Size",
+      "title": "Authentifizierte Nachrichtengr\u00f6\u00dfe",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -2358,7 +2358,7 @@
     {
       "id": 45,
       "type": "timeseries",
-      "title": "Resource & Calendar Errors",
+      "title": "Ressourcen- & Kalenderfehler",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -2368,7 +2368,7 @@
       "targets": [
         {
           "expr": "rate(calendar_rule_expansion_error[5m])",
-          "legendFormat": "Calendar Rule Error",
+          "legendFormat": "Kalenderregel-Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2376,7 +2376,7 @@
         },
         {
           "expr": "rate(resource_bad_parameters[5m])",
-          "legendFormat": "Bad Parameters",
+          "legendFormat": "Ung\u00fcltige Parameter",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2384,7 +2384,7 @@
         },
         {
           "expr": "rate(resource_error[5m])",
-          "legendFormat": "Resource Error",
+          "legendFormat": "Ressourcenfehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2392,7 +2392,7 @@
         },
         {
           "expr": "rate(resource_download_external[5m])",
-          "legendFormat": "External Download",
+          "legendFormat": "Externer Download",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2400,7 +2400,7 @@
         },
         {
           "expr": "rate(jmap_not_found[5m])",
-          "legendFormat": "JMAP Not Found",
+          "legendFormat": "JMAP nicht gefunden",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2434,7 +2434,7 @@
     },
     {
       "type": "row",
-      "title": "Infrastructure & Misc",
+      "title": "Infrastruktur & Sonstiges",
       "collapsed": false,
       "gridPos": {
         "h": 1,
@@ -2447,7 +2447,7 @@
     {
       "id": 47,
       "type": "timeseries",
-      "title": "Network Errors",
+      "title": "Netzwerkfehler",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -2457,7 +2457,7 @@
       "targets": [
         {
           "expr": "rate(network_bind_error[5m])",
-          "legendFormat": "Bind Error",
+          "legendFormat": "Bind-Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2465,7 +2465,7 @@
         },
         {
           "expr": "rate(network_set_opt_error[5m])",
-          "legendFormat": "Set Opt Error",
+          "legendFormat": "Set-Opt-Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2500,7 +2500,7 @@
     {
       "id": 48,
       "type": "timeseries",
-      "title": "Milter Actions",
+      "title": "Milter-Aktionen",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -2510,7 +2510,7 @@
       "targets": [
         {
           "expr": "rate(milter_action_temp_fail[5m])",
-          "legendFormat": "Temp Fail",
+          "legendFormat": "Tempor\u00e4rer Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2518,7 +2518,7 @@
         },
         {
           "expr": "rate(milter_action_reply_code[5m])",
-          "legendFormat": "Reply Code",
+          "legendFormat": "Antwortcode",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2526,7 +2526,7 @@
         },
         {
           "expr": "rate(milter_action_shutdown[5m])",
-          "legendFormat": "Shutdown",
+          "legendFormat": "Herunterfahren",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2561,7 +2561,7 @@
     {
       "id": 49,
       "type": "timeseries",
-      "title": "Outgoing Reports & Store Operations",
+      "title": "Ausgehende Reports & Store-Operationen",
       "gridPos": {
         "h": 6,
         "w": 8,
@@ -2571,7 +2571,7 @@
       "targets": [
         {
           "expr": "rate(outgoing_report_http_submission[5m])",
-          "legendFormat": "Report HTTP Submission",
+          "legendFormat": "Report: HTTP-\u00dcbermittlung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2579,7 +2579,7 @@
         },
         {
           "expr": "rate(outgoing_report_submission_error[5m])",
-          "legendFormat": "Report Error",
+          "legendFormat": "Report-Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2587,7 +2587,7 @@
         },
         {
           "expr": "rate(store_data_iterate[5m])",
-          "legendFormat": "Store Iterate",
+          "legendFormat": "Store-Iteration",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2595,7 +2595,7 @@
         },
         {
           "expr": "rate(spam_pyzor_error[5m])",
-          "legendFormat": "Pyzor Error",
+          "legendFormat": "Pyzor-Fehler",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2603,7 +2603,7 @@
         },
         {
           "expr": "rate(task_manager_task_locked[5m])",
-          "legendFormat": "Task Locked",
+          "legendFormat": "Task gesperrt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"

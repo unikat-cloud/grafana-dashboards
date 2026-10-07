@@ -17,8 +17,8 @@
   "timezone": "browser",
   "tags": [
     "n8n",
-    "monitoring",
-    "automation"
+    "\u00fcberwachung",
+    "automatisierung"
   ],
   "time": {
     "from": "now-6h",
@@ -51,7 +51,7 @@
   "panels": [
     {
       "type": "row",
-      "title": "Overview",
+      "title": "\u00dcbersicht",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -128,7 +128,7 @@
       "id": 2
     },
     {
-      "title": "n8n Version",
+      "title": "n8n-Version",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -188,7 +188,7 @@
       "id": 3
     },
     {
-      "title": "Active Workflows",
+      "title": "Aktive Workflows",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -204,7 +204,7 @@
         {
           "refId": "A",
           "expr": "n8n_active_workflow_count",
-          "legendFormat": "Active",
+          "legendFormat": "Aktiv",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -255,7 +255,7 @@
       "id": 4
     },
     {
-      "title": "Instance is Leader",
+      "title": "Instanz ist Leader",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -328,7 +328,7 @@
       "id": 5
     },
     {
-      "title": "Last Activity",
+      "title": "Letzte Aktivit\u00e4t",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -344,7 +344,7 @@
         {
           "refId": "A",
           "expr": "time() - n8n_last_activity",
-          "legendFormat": "Last Activity",
+          "legendFormat": "Letzte Aktivit\u00e4t",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -395,7 +395,7 @@
       "id": 6
     },
     {
-      "title": "Open File Descriptors",
+      "title": "Offene Dateideskriptoren",
       "type": "gauge",
       "gridPos": {
         "h": 4,
@@ -411,7 +411,7 @@
         {
           "refId": "A",
           "expr": "n8n_process_open_fds",
-          "legendFormat": "Open FDs",
+          "legendFormat": "Offene FDs",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -462,7 +462,7 @@
       "id": 7
     },
     {
-      "title": "Active Resources Total",
+      "title": "Aktive Ressourcen gesamt",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -478,7 +478,7 @@
         {
           "refId": "A",
           "expr": "n8n_nodejs_active_resources_total",
-          "legendFormat": "Active Resources",
+          "legendFormat": "Aktive Ressourcen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -529,7 +529,7 @@
       "id": 8
     },
     {
-      "title": "Event Loop Lag",
+      "title": "Event-Loop-Verz\u00f6gerung",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -545,7 +545,7 @@
         {
           "refId": "A",
           "expr": "n8n_nodejs_eventloop_lag_seconds",
-          "legendFormat": "Lag",
+          "legendFormat": "Verz\u00f6gerung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -597,7 +597,7 @@
     },
     {
       "type": "row",
-      "title": "CPU & Process",
+      "title": "CPU & Prozess",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -607,7 +607,7 @@
       "id": 10
     },
     {
-      "title": "CPU Usage (rate)",
+      "title": "CPU-Auslastung (Rate)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -641,7 +641,7 @@
         {
           "refId": "C",
           "expr": "rate(n8n_process_cpu_seconds_total[$__rate_interval])",
-          "legendFormat": "Total",
+          "legendFormat": "Gesamt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -712,7 +712,7 @@
       "id": 11
     },
     {
-      "title": "CPU Total (cumulative)",
+      "title": "CPU gesamt (kumulativ)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -746,7 +746,7 @@
         {
           "refId": "C",
           "expr": "n8n_process_cpu_seconds_total",
-          "legendFormat": "Total",
+          "legendFormat": "Gesamt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -818,7 +818,7 @@
     },
     {
       "type": "row",
-      "title": "Memory",
+      "title": "Speicher",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -828,7 +828,7 @@
       "id": 13
     },
     {
-      "title": "Process Memory",
+      "title": "Prozessspeicher",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -853,7 +853,7 @@
         {
           "refId": "B",
           "expr": "n8n_process_virtual_memory_bytes",
-          "legendFormat": "Virtual",
+          "legendFormat": "Virtuell",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -862,7 +862,7 @@
         {
           "refId": "C",
           "expr": "n8n_process_heap_bytes",
-          "legendFormat": "Process Heap",
+          "legendFormat": "Prozess-Heap",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -942,7 +942,7 @@
       "id": 14
     },
     {
-      "title": "Node.js Heap",
+      "title": "Node.js-Heap",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -958,7 +958,7 @@
         {
           "refId": "A",
           "expr": "n8n_nodejs_heap_size_total_bytes",
-          "legendFormat": "Heap Total",
+          "legendFormat": "Heap gesamt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -967,7 +967,7 @@
         {
           "refId": "B",
           "expr": "n8n_nodejs_heap_size_used_bytes",
-          "legendFormat": "Heap Used",
+          "legendFormat": "Heap belegt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -985,7 +985,7 @@
         {
           "refId": "D",
           "expr": "n8n_process_resident_memory_bytes",
-          "legendFormat": "RSS (reference)",
+          "legendFormat": "RSS (Referenz)",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1056,7 +1056,7 @@
       "id": 15
     },
     {
-      "title": "Heap Space Total (by space)",
+      "title": "Heap-Speicher gesamt (nach Space)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1143,7 +1143,7 @@
       "id": 16
     },
     {
-      "title": "Heap Space Used (by space)",
+      "title": "Heap-Speicher belegt (nach Space)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1230,7 +1230,7 @@
       "id": 17
     },
     {
-      "title": "Heap Space Available (by space)",
+      "title": "Heap-Speicher verf\u00fcgbar (nach Space)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1317,7 +1317,7 @@
       "id": 18
     },
     {
-      "title": "Heap Usage %",
+      "title": "Heap-Auslastung %",
       "type": "gauge",
       "gridPos": {
         "h": 8,
@@ -1333,7 +1333,7 @@
         {
           "refId": "A",
           "expr": "n8n_nodejs_heap_size_used_bytes / n8n_nodejs_heap_size_total_bytes * 100",
-          "legendFormat": "Heap Usage",
+          "legendFormat": "Heap-Auslastung",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1384,7 +1384,7 @@
       "id": 19
     },
     {
-      "title": "Memory Summary",
+      "title": "Speicher\u00fcbersicht",
       "type": "bargauge",
       "gridPos": {
         "h": 8,
@@ -1409,7 +1409,7 @@
         {
           "refId": "B",
           "expr": "n8n_process_virtual_memory_bytes",
-          "legendFormat": "Virtual",
+          "legendFormat": "Virtuell",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1427,7 +1427,7 @@
         {
           "refId": "D",
           "expr": "n8n_nodejs_heap_size_used_bytes",
-          "legendFormat": "JS Heap Used",
+          "legendFormat": "JS-Heap belegt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1488,7 +1488,7 @@
       "id": 21
     },
     {
-      "title": "Event Loop Lag",
+      "title": "Event-Loop-Verz\u00f6gerung",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1504,7 +1504,7 @@
         {
           "refId": "A",
           "expr": "n8n_nodejs_eventloop_lag_seconds",
-          "legendFormat": "Current",
+          "legendFormat": "Aktuell",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1531,7 +1531,7 @@
         {
           "refId": "D",
           "expr": "n8n_nodejs_eventloop_lag_mean_seconds",
-          "legendFormat": "Mean",
+          "legendFormat": "Mittelwert",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -1610,7 +1610,7 @@
       "id": 22
     },
     {
-      "title": "Event Loop Percentiles",
+      "title": "Event-Loop-Perzentile",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1724,7 +1724,7 @@
       "id": 23
     },
     {
-      "title": "GC Duration (rate)",
+      "title": "GC-Dauer (Rate)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1811,7 +1811,7 @@
       "id": 24
     },
     {
-      "title": "GC Count (rate)",
+      "title": "GC-Anzahl (Rate)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1899,7 +1899,7 @@
     },
     {
       "type": "row",
-      "title": "Active Resources & Handles",
+      "title": "Aktive Ressourcen & Handles",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -1909,7 +1909,7 @@
       "id": 26
     },
     {
-      "title": "Active Resources by Type",
+      "title": "Aktive Ressourcen nach Typ",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -1996,7 +1996,7 @@
       "id": 27
     },
     {
-      "title": "Active Handles by Type",
+      "title": "Aktive Handles nach Typ",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2083,7 +2083,7 @@
       "id": 28
     },
     {
-      "title": "Active Handles Total",
+      "title": "Aktive Handles gesamt",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2150,7 +2150,7 @@
       "id": 29
     },
     {
-      "title": "Active Requests Total",
+      "title": "Aktive Anfragen gesamt",
       "type": "stat",
       "gridPos": {
         "h": 4,
@@ -2166,7 +2166,7 @@
         {
           "refId": "A",
           "expr": "n8n_nodejs_active_requests_total",
-          "legendFormat": "Requests",
+          "legendFormat": "Anfragen",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2228,7 +2228,7 @@
       "id": 31
     },
     {
-      "title": "Workflow Executions (p90 duration)",
+      "title": "Workflow-Ausf\u00fchrungen (p90-Dauer)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2315,7 +2315,7 @@
       "id": 32
     },
     {
-      "title": "Workflow Executions (p50 duration)",
+      "title": "Workflow-Ausf\u00fchrungen (p50-Dauer)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2402,7 +2402,7 @@
       "id": 33
     },
     {
-      "title": "Workflow Executions (p99 duration)",
+      "title": "Workflow-Ausf\u00fchrungen (p99-Dauer)",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2489,7 +2489,7 @@
       "id": 34
     },
     {
-      "title": "Workflow Execution Rate",
+      "title": "Workflow-Ausf\u00fchrungsrate",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2505,7 +2505,7 @@
         {
           "refId": "A",
           "expr": "sum(rate(n8n_workflow_execution_duration_seconds_count[$__rate_interval]))",
-          "legendFormat": "Total executions",
+          "legendFormat": "Ausf\u00fchrungen gesamt",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2514,7 +2514,7 @@
         {
           "refId": "B",
           "expr": "sum(rate(n8n_workflow_execution_duration_seconds_count{status=\"success\"}[$__rate_interval]))",
-          "legendFormat": "Success",
+          "legendFormat": "Erfolg",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2585,7 +2585,7 @@
       "id": 35
     },
     {
-      "title": "Workflow Execution Heatmap",
+      "title": "Workflow-Ausf\u00fchrungs-Heatmap",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2672,7 +2672,7 @@
       "id": 36
     },
     {
-      "title": "Workflows Table",
+      "title": "Workflows-Tabelle",
       "type": "table",
       "gridPos": {
         "h": 8,
@@ -2763,7 +2763,7 @@
     },
     {
       "type": "row",
-      "title": "Authentication",
+      "title": "Authentifizierung",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -2773,7 +2773,7 @@
       "id": 38
     },
     {
-      "title": "Token Exchange Requests",
+      "title": "Token-Austausch-Anfragen",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2860,7 +2860,7 @@
       "id": 39
     },
     {
-      "title": "Embed Login Requests",
+      "title": "Embed-Login-Anfragen",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2947,7 +2947,7 @@
       "id": 40
     },
     {
-      "title": "Auth Cumulative",
+      "title": "Auth kumulativ",
       "type": "timeseries",
       "gridPos": {
         "h": 8,
@@ -2963,7 +2963,7 @@
         {
           "refId": "A",
           "expr": "n8n_token_exchange_jit_provisioning_total",
-          "legendFormat": "JIT Provisioned",
+          "legendFormat": "JIT provisioniert",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
@@ -2972,7 +2972,7 @@
         {
           "refId": "B",
           "expr": "n8n_token_exchange_identity_linked_total",
-          "legendFormat": "Identities Linked",
+          "legendFormat": "Identit\u00e4ten verkn\u00fcpft",
           "datasource": {
             "type": "prometheus",
             "uid": "${DS_PROMETHEUS}"
