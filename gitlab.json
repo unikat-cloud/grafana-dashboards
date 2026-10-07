@@ -485,7 +485,7 @@
     },
     {
       "type": "row",
-      "title": "System Resources",
+      "title": "Systemressourcen",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -2393,7 +2393,7 @@
     },
     {
       "type": "row",
-      "title": "Database",
+      "title": "Datenbank",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -5104,7 +5104,7 @@
     },
     {
       "type": "row",
-      "title": "GitLab Auth & Rate Limiter",
+      "title": "GitLab Auth & Rate-Limiter",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -8899,7 +8899,7 @@
     },
     {
       "type": "row",
-      "title": "Transaction Details",
+      "title": "Transaktionsdetails",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -9617,7 +9617,7 @@
     },
     {
       "type": "row",
-      "title": "Connection Pools",
+      "title": "Verbindungspools",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -9802,7 +9802,7 @@
     },
     {
       "type": "row",
-      "title": "Ruby Threads & Memory Watchdog",
+      "title": "Ruby-Threads & Memory-Watchdog",
       "gridPos": {
         "h": 1,
         "w": 24,
