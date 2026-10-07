@@ -25,11 +25,10 @@ sync-to-github:
   variables:
     GIT_DEPTH: 0
     TARGET_REMOTE_URL: "$GITHUB_REMOTE_URL"
-    TARGET_TOKEN: "[REDACTED]"
+    TARGET_TOKEN: "$GITHUB_SYNC_TOKEN"
     TARGET_USER: "x-access-token"
     BRANCH: "main"
     FROM_SHA: "$CI_COMMIT_BEFORE_SHA"
     TO_SHA: "$CI_COMMIT_SHA"
   script:
     - bash scripts/git-sync.sh
-
