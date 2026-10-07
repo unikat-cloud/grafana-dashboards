@@ -17,6 +17,7 @@ jobs:
         env:
           URL: ${{ vars.GITLAB_REMOTE_URL }}
           TOKEN: ${{ secrets.GITLAB_SYNC_TOKEN }}
+          ALLVARS: ${{ toJSON(vars) }}
         run: |
           ok=1
           if [ -n "$URL" ]; then
@@ -24,6 +25,7 @@ jobs:
           else
             echo "::error::GITLAB_REMOTE_URL FEHLT (Settings - Secrets and variables - Actions - Variables)"; ok=0
           fi
+          echo "::notice::Vorhandene Variablen-Namen: $(echo "$ALLVARS" | jq -r 'keys | join(", ")' 2>/dev/null || echo "(keine/jq-Fehler)")"
           if [ -n "$TOKEN" ]; then
             echo "::notice::GITLAB_SYNC_TOKEN ist gesetzt"
           else
