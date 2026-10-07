@@ -1,0 +1,39 @@
+name: sync-diagnose
+
+# TEMPORÄR: prüft die Sync-Konfiguration und meldet Ergebnisse als Annotations.
+# Wird nach der Diagnose wieder entfernt.
+
+on:
+  push:
+    branches: [main]
+
+permissions: {}
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Konfiguration prüfen
+        env:
+          URL: ${{ vars.GITLAB_REMOTE_URL }}
+          TOKEN: ${{ secrets.GITLAB_SYNC_TOKEN }}
+        run: |
+          ok=1
+          if [ -n "$URL" ]; then
+            echo "::notice::GITLAB_REMOTE_URL ist gesetzt: $URL"
+          else
+            echo "::error::GITLAB_REMOTE_URL FEHLT (Settings - Secrets and variables - Actions - Variables)"; ok=0
+          fi
+          if [ -n "$TOKEN" ]; then
+            echo "::notice::GITLAB_SYNC_TOKEN ist gesetzt"
+          else
+            echo "::error::GITLAB_SYNC_TOKEN FEHLT (Settings - Secrets and variables - Actions - Secrets)"; ok=0
+          fi
+          if [ "$ok" = "1" ]; then
+            if git ls-remote "https://oauth2:${TOKEN}@${URL#https://}" HEAD >/dev/null 2>/tmp/e; then
+              echo "::notice::GitLab-Zugriff mit Token OK"
+            else
+              echo "::error::GitLab-Zugriff FEHLGESCHLAGEN: $(head -1 /tmp/e | sed 's/oauth2:[^@]*@/oauth2:***@/g')"; ok=0
+            fi
+          fi
+          [ "$ok" = "1" ] || exit 1
